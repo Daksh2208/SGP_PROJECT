@@ -10,7 +10,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-color: #ff6347;
+    background-color: green;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -47,7 +47,7 @@ header h1 {
 }
 
 .section h2 {
-    color:greenyellow;
+    color: green;
     font-size: 2em;
     border-bottom: 2px solid #ff6347;
     padding-bottom: 10px;
@@ -85,7 +85,7 @@ header h1 {
 
 .section ul li strong {
     list-style: none;
-    color: greenyellow;
+    color: green;
 }
 
 /* Decorative Elements */
@@ -95,15 +95,15 @@ ul {
 }
 
 ul li strong::before {
-    content: '🌸';
+    content: '🍎';
     list-style: none;
     margin-right: 10px;
-    color:greenyellow;
+    color: green;
 }
 
 h3 {
     font-size: 1.5em;
-    color: greenyellow;
+    color: green;
 }
 
 /* Responsive Styles */
