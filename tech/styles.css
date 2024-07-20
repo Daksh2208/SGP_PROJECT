@@ -1,0 +1,118 @@
+/* Reset and global styles */
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #5d4c4c;
+}
+
+.hero {
+  background: url('hero-background.jpg') no-repeat center center/cover;
+  color: #623d3d;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgb(142, 138, 138);
+  padding: 20px;
+  border-radius: 8px;
+}
+.hero-content h1:hover{
+  transform: scale(1.02);
+
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Ensure children elements do not exceed container */
+}
+
+.content {
+  float: left;
+  width: 60%;
+  padding-right: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.image-container {
+  float: right;
+  width: 40%;
+  animation: fadeIn 1s ease-in 0.5s;
+}
+
+h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+ul li:hover {
+  transform: scale(1.05);
+}
+
+ul li strong {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .content, .image-container {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+  }
+}
