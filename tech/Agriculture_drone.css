@@ -18,7 +18,7 @@ html, body {
 
 /* Header styling */
 header {
-    background-color: #004d00;
+    background-color: #33DEED;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -31,24 +31,24 @@ header h1 {
     font-size: 2.5em;
 }
 
-nav {
+/* nav {
     background-color: #006400;
     color: #ffffff;
     width: 100%;
-}
+} */
 
-nav ul {
+/* nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-}
+} */
 
-nav ul li {
+/* nav ul li {
     margin: 0 15px;
-}
+} */
 
-nav ul li a {
+/* nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
@@ -56,7 +56,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Main content styling */
 main {
@@ -75,16 +75,16 @@ section {
 }
 
 h2 {
-    border-bottom: 3px solid #004d00;
+    border-bottom: 3px solid #33DEED;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 2.2em;
-    color: #004d00;
+    color: #33DEED;
 }
 
 h3 {
     font-size: 1.5em;
-    color: #004d00;
+    color: #33DEED;
     margin-bottom: 10px;
 }
 
@@ -99,6 +99,13 @@ li {
     line-height: 1.5;
 }
 
+/* Content wrapper styling */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
 /* Image styling */
 img {
     max-width: 100%;
@@ -107,9 +114,18 @@ img {
     margin-top: 20px;
 }
 
+.content-wrapper img {
+    width: 20%;
+}
+
+/* Text content styling */
+.content-wrapper p, .content-wrapper ul, .content-wrapper div {
+    width: 60%;
+}
+
 /* Footer styling */
 footer {
-    background-color: #004d00;
+    background-color: #33DEED;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
