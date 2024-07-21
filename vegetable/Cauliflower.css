@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🌸';
+    content: '🥦';
     list-style: none;
     margin-right: 10px;
     color: green;
@@ -126,4 +126,20 @@ h3 {
         float: none;
         margin: 0;
     }
+}
+
+/* Footer styling */
+footer {
+    background-color: green;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Ensures footer stays at the bottom */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
 }

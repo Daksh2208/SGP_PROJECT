@@ -1,106 +1,107 @@
-/* styles.css */
-
-/* General Styles */
-html, body {
-    height: 100%;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+/* Basic styling */
+html, body {
+    height: 100%; /* Full height for the body */
     display: flex;
     flex-direction: column;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+
+/* Header styling */
 header {
-    background-color: #ffcc00; /* Bright sunflower yellow */
-    color: #fff;
-    padding: 1rem;
+    background-color: #f39c12; /* Orange color */
+    color: #ecf0f1;
+    padding: 20px 0;
     text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-h1 {
+header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
+/* Main content styling */
 main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex: 1; /* This makes the main content area take up the remaining space */
+    flex: 1;
+    margin: 20px auto;
+    max-width: 100%; /* Adjusted max-width for content */
+    padding: 0 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
+/* Section styling */
 section {
-    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 h2 {
-    background-color: #ffcc00; /* Bright sunflower yellow */
-    color: #333;
-    padding: 1rem;
-    border-radius: 5px;
-    font-size: 1.8rem;
-}
-
-article {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-top: 1rem;
+    border-bottom: 3px solid #f39c12;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #f39c12;
 }
 
 h3 {
-    background-color: #ff9900; /* Slightly darker sunflower yellow */
-    color: #fff;
-    padding: 0.5rem;
-    border-radius: 3px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
+    color: #f39c12;
+    margin-bottom: 10px;
 }
 
+/* List styling */
 ul {
-    list-style-type: disc;
-    margin-left: 2rem;
+    list-style-type: none;
+    margin-left: 20px;
 }
 
 li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
+/* Footer styling */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #f39c12;
+    color: #ecf0f1;
     text-align: center;
-    padding: 1rem;
+    padding: 10px 0;
     width: 100%;
-    margin-top: auto; /* Pushes the footer to the bottom */
+    position: relative;
+    bottom: 0;
 }
 
 footer p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9em;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
+ul li strong::before {
+    content: '🌻'; /* Sunflower emoji */
+    list-style: none;
+    margin-right: 10px;
+    color: #f39c12;
 }

@@ -10,7 +10,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-color: #ff6347;
+    background-color: green;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -48,9 +48,9 @@ header h1 {
 }
 
 .section h2 {
-    color: #ff6347;
+    color: green;
     font-size: 2em;
-    border-bottom: 2px solid #ff6347;
+    border-bottom: 2px solid green;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -87,7 +87,7 @@ header h1 {
 
 .section ul li strong {
     list-style: none;
-    color: #ff6347;
+    color: green;
 }
 
 /* Decorative Elements */
@@ -100,12 +100,12 @@ ul li strong::before {
     content: '🍅';
     list-style: none;
     margin-right: 10px;
-    color: #ff6347;
+    color: green;
 }
 
 h3 {
     font-size: 1.5em;
-    color: #ff6347;
+    color: green;
 }
 
 /* Responsive Styles */
@@ -128,4 +128,19 @@ h3 {
         float: none;
         margin: 0;
     }
+}
+/* Footer styling */
+footer {
+    background-color: green;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Ensures footer stays at the bottom */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
 }

@@ -153,10 +153,10 @@ header {
 .robo-link,
 .mache-link,
 .tomato-link,
-.fulewar-link,
+.Cauliflower-link,
 .ladyfinger-link,
 
-.marigold-link,.roseflower-link,.sunflower-link {
+.marigold-link,.Rose-link,.sunflower-link {
     display: block;
     position: relative;
     overflow: hidden;
@@ -168,9 +168,9 @@ header {
 .robo-image,
 .mache-image,
 .tomato-image,
-.fulewar-image,
+.Cauliflower-image,
 .ladyfinger-image,
-.Marigold-image,.roseflower-image,.sunflower-image {
+.Marigold-image,.Rose-image,.sunflower-image {
     display: flex;
     width: 100%;
     height: 200px;
@@ -182,10 +182,10 @@ header {
 .robo-link:hover .robo-image,
 .mache-link:hover .mache-image,
 .tomato-link:hover .tomato-image,
-.fulewar-link:hover .fulewar-image,
+.Cauliflower-link:hover .Cauliflower-image,
 .ladyfinger-link:hover .ladyfinger-image,
 
-.Marigold-image:hover ,.roseflower-image:hover ,.sunflower-image:hover  {
+.Marigold-image:hover ,.Rose-image:hover ,.sunflower-image:hover  {
     transform: scale(1.05);
     opacity: 0.8;
 }
