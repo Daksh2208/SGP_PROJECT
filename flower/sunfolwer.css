@@ -22,12 +22,13 @@ body {
 
 /* Header styling */
 header {
-    background-color: #f39c12; /* Orange color */
-    color: #ecf0f1;
+    background-color: orange;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: 100%; /* Set the width to the device width */
+    border-top-right-radius: 20px; /* Curved edge on top right */
+    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -39,14 +40,10 @@ header h1 {
 
 /* Main content styling */
 main {
-    flex: 1;
+    flex: 1; /* Makes the main section grow and take available space */
     margin: 20px auto;
-    max-width: 100%; /* Adjusted max-width for content */
+    width: 100%; /* Set the width to the device width */
     padding: 0 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
 }
 
 /* Section styling */
@@ -59,16 +56,16 @@ section {
 }
 
 h2 {
-    border-bottom: 3px solid #f39c12;
+    border-bottom: 3px solid #e67e22;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #f39c12;
+    color: orange;
 }
 
 h3 {
     font-size: 1.5em;
-    color: #f39c12;
+    color: orange;
     margin-bottom: 10px;
 }
 
@@ -83,25 +80,24 @@ li {
     line-height: 1.5;
 }
 
+ul li strong::before {
+    content: '🌼';
+    margin-right: 10px;
+    color: orange;
+}
+
 /* Footer styling */
 footer {
-    background-color: #f39c12;
-    color: #ecf0f1;
+    background-color: orange;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
-    width: 100%;
+    width: 100%; /* Set the width to the device width */
     position: relative;
-    bottom: 0;
+    bottom: 0; /* Ensures footer stays at the bottom */
 }
 
 footer p {
     margin: 0;
     font-size: 0.9em;
-}
-
-ul li strong::before {
-    content: '🌻'; /* Sunflower emoji */
-    list-style: none;
-    margin-right: 10px;
-    color: #f39c12;
 }
