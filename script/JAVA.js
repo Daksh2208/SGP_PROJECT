@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     fulewarLink.addEventListener('click', function() {
-        window.location.href = 'fulewar.html';
+        window.location.href = 'Cauliflower.html';
     });
 
     mangoLink.addEventListener('click', function() {

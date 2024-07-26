@@ -18,7 +18,7 @@ html, body {
 
 /* Header styling */
 header {
-    background-color: #FF5733;
+    background-color: #33DEED;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -30,6 +30,33 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
 }
+
+/* nav {
+    background-color: #006400;
+    color: #ffffff;
+    width: 100%;
+} */
+
+/* nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+} */
+
+/* nav ul li {
+    margin: 0 15px;
+} */
+
+/* nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+} */
 
 /* Main content styling */
 main {
@@ -48,16 +75,16 @@ section {
 }
 
 h2 {
-    border-bottom: 3px solid #FF5733;
+    border-bottom: 3px solid #33DEED;
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 2.2em;
-    color: #FF5733;
+    color: #33DEED;
 }
 
 h3 {
     font-size: 1.5em;
-    color: #FF5733;
+    color: #33DEED;
     margin-bottom: 10px;
 }
 
@@ -98,7 +125,7 @@ img {
 
 /* Footer styling */
 footer {
-    background-color: #FF5733;
+    background-color: #33DEED;
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
