@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: #ff6f61; /* Adjusted color for papaya theme */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 20px; /* Curved edge on top right */
+    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Container Styles */
+.container {
+    width: 97%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 20px; /* Curved edge on top right */
+    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #ff6f61; /* Adjusted color for papaya theme */
+    font-size: 2em;
+    border-bottom: 2px solid #ffb74d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section img {
+    width: 15%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-right: 20px;
+}
+
+.section p, .section ul {
+    list-style: none;
+    overflow: hidden; /* Clearfix for floated images */
+}
+
+/* List Styles */
+.section ul {
+    list-style-type: disc;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.section ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.section ul li strong {
+    list-style: none;
+    color: #ff6f61; /* Adjusted color for papaya theme */
+}
+
+/* Decorative Elements */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li strong::before {
+    content: '🥭'; /* Papaya emoji */
+    list-style: none;
+    margin-right: 10px;
+    color: #ff6f61; /* Adjusted color for papaya theme */
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #ff6f61; /* Adjusted color for papaya theme */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .section img {
+        width: 80%;
+        float: none;
+        margin: 0;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #ff6f61; 
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Ensures footer stays at the bottom */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
