@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vegetables - Agro Tech</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2e8b57);
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 120px;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-nav li {
+            position: relative;
+        }
+
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .main-nav a:hover {
+            background-color: #388E3C;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .vegetable-intro {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .vegetable-intro h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #2e8b57;
+        }
+
+        .vegetable-intro p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .vegetable-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .vegetable-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 320px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .vegetable-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .vegetable-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .vegetable-item img:hover {
+            opacity: 0.8;
+        }
+
+        .vegetable-info {
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .vegetable-info h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+
+        }
+
+        .vegetable-info p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+    </header>
+
+    <main>
+        <section class="vegetable-intro">
+            <h1>Vegetables</h1>
+            <p>Explore various vegetables and their cultivation techniques.</p>
+        </section>
+        
+        <section class="vegetable-gallery">
+            <article class="vegetable-item">
+                <a href="/vegetable/tomatoes.html">
+                    <img src="/vegetable/tomatoes.jpg" alt="Tomatoes">
+                    <div class="vegetable-info">
+                        <h2 style="text-decoration: none;">Tomatoes </h2>
+                    </div>
+                </a>
+            </article>
+            <article class="vegetable-item">
+                <a href="/vegetable/Cauliflower.html">
+                    <img src="/vegetable/Cauliflower.jpg" alt="Cauliflower">
+                    <div class="vegetable-info">
+                        <h2>Cauliflower</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="vegetable-item">
+                <a href="/vegetable/Ladyfinger.html">
+                    <img src="/vegetable/Okra(Ladyfinger.jpeg" alt="Lady Finger">
+                    <div class="vegetable-info">
+                        <h2>Lady Finger</h2>
+                    </div>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Agro Tech. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
