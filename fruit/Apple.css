@@ -1,4 +1,3 @@
-
 /* General Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -11,7 +10,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-color: #8b4513; /* Adjusted color for sapodilla theme */
+    background-color: green;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -48,7 +47,7 @@ header h1 {
 }
 
 .section h2 {
-    color: #8b4513; /* Adjusted color for sapodilla theme */
+    color: green;
     font-size: 2em;
     border-bottom: 2px solid #ff6347;
     padding-bottom: 10px;
@@ -86,7 +85,7 @@ header h1 {
 
 .section ul li strong {
     list-style: none;
-    color: #8b4513; /* Adjusted color for sapodilla theme */
+    color: green;
 }
 
 /* Decorative Elements */
@@ -96,15 +95,15 @@ ul {
 }
 
 ul li strong::before {
-    content: '🍈'; /* Melon emoji as placeholder for sapodilla */
+    content: '🍎';
     list-style: none;
     margin-right: 10px;
-    color: #8b4513; /* Adjusted color for sapodilla theme */
+    color: green;
 }
 
 h3 {
     font-size: 1.5em;
-    color: #8b4513; /* Adjusted color for sapodilla theme */
+    color: green;
 }
 
 /* Responsive Styles */
@@ -123,15 +122,14 @@ h3 {
     }
 
     .section img {
-        width: 80%;
+        width: 100%;
         float: none;
         margin: 0;
     }
 }
-
 /* Footer styling */
 footer {
-    background-color: #8b4513; 
+    background-color: green;
     color: #ecf0f1;
     text-align: center;
     padding: 10px 0;
