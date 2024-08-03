@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background-color: #6D4C41; /* Bitroot brown */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 20px; /* Curved edge on top right */
+    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Container Styles */
+.container {
+    width: 97%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 20px; /* Curved edge on top right */
+    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Pointer Styles */
+.pointer {
+    background-color: #f9f9f9;
+    border: 2px solid #e1e1e1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pointer h2 {
+    color: #333;
+    font-size: 1.8em;
+}
+
+.pointer p {
+    margin: 10px 0;
+}
+
+.pointer a {
+    color: #6D4C41; /* Bitroot brown */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pointer a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #6D4C41; /* Bitroot brown */
+    font-size: 2em;
+    border-bottom: 2px solid #8D6E63;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section img {
+    width: 18%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-right: 20px;
+}
+
+.section p, .section ul {
+    list-style: none;
+    overflow: hidden; /* Clearfix for floated images */
+}
+
+/* List Styles */
+.section ul {
+    list-style-type: disc;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.section ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.section ul li strong {
+    list-style: none;
+    color: #6D4C41; /* Bitroot brown */
+}
+
+/* Decorative Elements */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li strong::before {
+    content: '🌿';
+    list-style: none;
+    margin-right: 10px;
+    color: #6D4C41; /* Bitroot brown */
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #6D4C41; /* Bitroot brown */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .section img {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #6D4C41; /* Bitroot brown */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Ensures footer stays at the bottom */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
