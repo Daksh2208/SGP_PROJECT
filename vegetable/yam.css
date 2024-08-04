@@ -10,7 +10,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-color: #4CAF50; /* Green */
+    background-color: #8E24AA; /* Purple */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -47,9 +47,9 @@ header h1 {
 }
 
 .section h2 {
-    color: #4CAF50; /* Green */
+    color: #8E24AA; /* Purple */
     font-size: 2em;
-    border-bottom: 2px solid #388E3C; /* Darker Green */
+    border-bottom: 2px solid #6D1B3D; /* Darker Purple */
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -85,7 +85,7 @@ header h1 {
 
 .section ul li strong {
     list-style: none;
-    color: #4CAF50; /* Green */
+    color: #8E24AA; /* Purple */
 }
 
 /* Decorative Elements */
@@ -95,29 +95,30 @@ ul {
 }
 
 ul li strong::before {
-    content: '🥬'; /* Lettuce emoji for spinach */
+    content: '🍠'; /* Yam emoji */
     list-style: none;
     margin-right: 10px;
-    color: #4CAF50; /* Green */
+    color: #8E24AA; /* Purple */
 }
 
 h3 {
     font-size: 1.5em;
-    color: #4CAF50; /* Green */
+    color: #8E24AA; /* Purple */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .section img {
         width: 100%;
-        float: none;
-        margin: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
 /* Footer Styles */
 footer {
-    background-color: #4CAF50; /* Green */
+    background-color: #8E24AA; /* Purple */
+    /* background-color: #4CAF50; Green */
     color: #f4f4f4;
     text-align: center;
     padding: 10px 0;

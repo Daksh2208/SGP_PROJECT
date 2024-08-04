@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🥬'; /* Lettuce emoji for spinach */
+    content: '🍆'; /* Eggplant emoji for a vegetable theme */
     list-style: none;
     margin-right: 10px;
     color: #4CAF50; /* Green */
@@ -110,8 +110,8 @@ h3 {
 @media (max-width: 768px) {
     .section img {
         width: 100%;
-        float: none;
-        margin: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
