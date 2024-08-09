@@ -4,187 +4,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegetables - Agro Tech</title>
-    <style>
-        /* Reset some default browser styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, #4CAF50, #2e8b57);
-            color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo img {
-            width: 120px;
-        }
-
-        .main-nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .main-nav li {
-            position: relative;
-        }
-
-        .main-nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            font-size: 16px;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .main-nav a:hover {
-            background-color: #388E3C;
-            border-radius: 5px;
-            color: #fff;
-        }
-
-        main {
-            padding: 40px 20px;
-        }
-
-        .vegetable-intro {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .vegetable-intro h1 {
-            font-size: 36px;
-            margin-bottom: 15px;
-            color: #2e8b57;
-        }
-
-        .vegetable-intro p {
-            font-size: 18px;
-            color: #555;
-        }
-
-        .vegetable-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
-
-        .vegetable-item {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 320px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .vegetable-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .vegetable-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            transition: opacity 0.3s;
-        }
-
-        .vegetable-item img:hover {
-            opacity: 0.8;
-        }
-
-        .vegetable-info {
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .vegetable-info h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #333;
-
-        }
-
-        .vegetable-info p {
-            font-size: 16px;
-            color: #777;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <title>Fruits - Agro Tech</title>
+    <link rel="stylesheet" href="vegetable.css">
 </head>
 
 <body>
     <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/home page/logo.jpeg" alt="Agro Tech">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/home page/index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
+    
     <main>
-        <section class="vegetable-intro">
-            <h1>Vegetables</h1>
+        <section class="vegetable">
+            <h1>Vegetables List</h1>
             <p>Explore various vegetables and their cultivation techniques.</p>
         </section>
         
         <section class="vegetable-gallery">
             <article class="vegetable-item">
-                <a href="/vegetable/tomatoes.html">
-                    <img src="/vegetable/tomatoes.jpg" alt="Tomatoes">
+                <a href="amaranth.html">
+                    <img src="Amaranth_Leaves.webp" alt="Amaranth">
                     <div class="vegetable-info">
-                        <h2 style="text-decoration: none;">Tomatoes </h2>
+                        <h2>Amaranth</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="/vegetable/Cauliflower.html">
-                    <img src="/vegetable/Cauliflower.jpg" alt="Cauliflower">
+                <a href="Arbi(Taro roots).html">
+                    <img src="Arbi(Taro roots).jpg" alt="Arbi">
                     <div class="vegetable-info">
-                        <h2>Cauliflower</h2>
+                        <h2>Arbi(Taro roots)</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="/vegetable/Ladyfinger.html">
-                    <img src="/vegetable/Okra(Ladyfinger.jpeg" alt="Lady Finger">
+                <a href="Artichoke.html">
+                    <img src="Artichoke.jpg" alt="Artichoke">
                     <div class="vegetable-info">
-                        <h2>Lady Finger</h2>
+                        <h2>Artichoke</h2>
                     </div>
                 </a>
             </article>
+        </article>
+        <article class="vegetable-item">
+            <a href="ash-gourd.html">
+                <img src="Ash-gourd(Petha).jpg" alt="Ash-gourd">
+                <div class="vegetable-info">
+                    <h2>Ash-gourd</h2>
+                </div>
+            </a>
+        </article>
+        <article class="vegetable-item">
+            <a href="aubergine.html">
+                <img src="Aubergine (Brinjal, Baingan).jpg" alt="Aubergine">
+                <div class="vegetable-info">
+                    <h2>Aubergine</h2>
+                </div>
+            </a>
+        </article>
+        <article class="vegetable-item">
+            <a href="Bamboo-shoots.html">
+                <img src="Bamboo-shoots.jpg" alt="Bamboo-shoots">
+                <div class="vegetable-info">
+                    <h2>Bamboo-shoots</h2>
+                </div>
+            </a>
+        </article>
+        <article class="vegetable-item">
+            <a href="Bell-pepper(capsicum).html">
+                <img src="Bell-pepper(capsicum).jpeg" alt="Bell-pepper">
+                <div class="vegetable-info">
+                    <h2>Bell-pepper</h2>
+                </div>
+            </a>
+        </article>
+        <article class="vegetable-item">
+            <a href="Bitroot.html">
+                <img src="Bitroot.jpeg" alt="Bitroot">
+                <div class="vegetable-info">
+                    <h2>Bitroot</h2>
+                </div>
+            </a>
+        </article>
+        <article class="vegetable-item">
+            <a href="Bitter-Gourd-Karela.html">
+                <img src="Bitter-Gourd-Karela.jpg" alt="Bitter-Gourd-Karela">
+                <div class="vegetable-info">
+                    <h2>Bitter-Gourd-Karela</h2>
+                </div>
+            </a>
+        </article>
+        <article class="vegetable-item">
+            <a href="Bok choy.html">
+                <img src="Bok choy.jpeg" alt="Bok choy">
+                <div class="vegetable-info">
+                    <h2>Bok choy</h2>
+                </div>
+            </a>
+        </article>
+        <article class="fruit-item">
+            <a href="Coconut.html">
+                <img src="Coconut (Nariyal).jpg" alt="Coconut">
+                <div class="fruit-info">
+                    <h2>Coconut (Nariyal)</h2>
+                </div>
+            </a>
+        </article>
+        <article class="fruit-item">
+            <a href="Custard Apple.html">
+                <img src="Custard Apple (Sitaphal).jpg" alt="Custard Apple">
+                <div class="fruit-info">
+                    <h2>Custard Apple (Sitaphal)</h2>
+                </div>
+            </a>
+        </article>
+        <article class="fruit-item">
+            <a href="Dragon Fruit.html">
+                <img src="Dragon Fruit (Pitaya).jpeg" alt="Dragon Fruit">
+                <div class="fruit-info">
+                    <h2>Dragon Fruit (Pitaya)</h2>
+                </div>
+            </a>
+        </article>
+        <article class="fruit-item">
+            <a href="Fig.html">
+                <img src="Fig (Anjeer).jpg" alt="Fig">
+                <div class="fruit-info">
+                    <h2>Fig (Anjeer)</h2>
+                </div>
+            </a>
+        </article>
+        <article class="fruit-item">
+            <a href="Gooseberry.html">
+                <img src="Gooseberry (Amla).jpeg" alt="Gooseberry">
+                <div class="fruit-info">
+                    <h2>Gooseberry (Amla)</h2>
+                </div>
+            </a>
+        </article>
+    </article>
+    <article class="fruit-item">
+        <a href="Grapes.html">
+            <img src="Grapes (Angoor).jpeg" alt="Grapes">
+            <div class="fruit-info">
+                <h2>Grapes (Angoor)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Guava.html">
+            <img src="Guava (Amrood).jpg" alt="Guava">
+            <div class="fruit-info">
+                <h2>Guava (Amrood)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Jackfruit.html">
+            <img src="Jackfruit (Kathal).jpg" alt="Jackfruit">
+            <div class="fruit-info">
+                <h2>Jackfruit (Kathal)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Jamun.html">
+            <img src="Jamun (Black Plum).jpeg" alt="Jamun">
+            <div class="fruit-info">
+                <h2>Jamun (Black Plum)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Kiwi.html">
+            <img src="Kiwi.jpeg" alt="Kiwi">
+            <div class="fruit-info">
+                <h2>Kiwi</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Kokum.html">
+            <img src="Kokum (Garcinia Indica).jpeg" alt="Kokum">
+            <div class="fruit-info">
+                <h2>Kokum (Garcinia Indica)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Lime.html">
+            <img src="Lime (Nimbu).jpg" alt="Lime">
+            <div class="fruit-info">
+                <h2>Lime (Nimbu)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Lychee.html">
+            <img src="Lychee (Litchi).jpeg" alt="Lychee">
+            <div class="fruit-info">
+                <h2>Lychee (Litchi)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Mango.html">
+            <img src="Mango (Aam).jpg" alt="Mango">
+            <div class="fruit-info">
+                <h2>Mango (Aam)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Mulberry.html">
+            <img src="Mulberry (Shahtoot).jpeg" alt="Mulberry">
+            <div class="fruit-info">
+                <h2>Mulberry (Shahtoot)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Muskmelon.html">
+            <img src="Muskmelon (Kharbooja).jpg" alt="Muskmelon">
+            <div class="fruit-info">
+                <h2>Muskmelon (Kharbooja)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Nance.html">
+            <img src="Nance (Golden Berry).jpeg" alt="Nance">
+            <div class="fruit-info">
+                <h2>Nance (Golden Berry)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Orange.html">
+            <img src="Orange (Santra).jpg" alt="Orange">
+            <div class="fruit-info">
+                <h2>Orange (Santra)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Papaya.html">
+            <img src="Papaya (Papita).jpeg" alt="Papaya">
+            <div class="fruit-info">
+                <h2>Papaya (Papita)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Passion Fruit.html">
+            <img src="Passion Fruit (Krishna Phal).jpeg" alt="Passion Fruit">
+            <div class="fruit-info">
+                <h2>Passion Fruit (Krishna Phal)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Peach.html">
+            <img src="Peach (Aadoo).jpeg" alt="Peach">
+            <div class="fruit-info">
+                <h2>Peach (Aadoo)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Pear.html">
+            <img src="Pear (Nashpati).jpeg" alt="Pear">
+            <div class="fruit-info">
+                <h2>Pear (Nashpati)</h2>
+            </div>
+        </a>
+    </article>
+    <article class="fruit-item">
+    <a href="Pineapple.html">
+        <img src="Pineapple (Ananas).jpg" alt="Pineapple">
+        <div class="fruit-info">
+            <h2>Pineapple (Ananas)</h2>
+        </div>
+    </a>
+</article>
+<article class="fruit-item">
+<a href="Plum.html">
+    <img src="Plum (Aloo Bukhara).jpeg" alt="Plum">
+    <div class="fruit-info">
+        <h2>Plum (Aloo Bukhara)</h2>
+    </div>
+</a>
+</article>
+<article class="fruit-item">
+    <a href="Pomegranate.html">
+        <img src="Pomegranate (Anaar).jpeg" alt="Pomegranate">
+        <div class="fruit-info">
+            <h2>Pomegranate (Anaar)</h2>
+        </div>
+    </a>
+    </article>
+    <article class="fruit-item">
+    <a href="Rambutan.html">
+        <img src="Rambutan.jpg" alt="Rambutan">
+        <div class="fruit-info">
+            <h2>Rambutan</h2>
+        </div>
+    </a>
+    </article>
+    <article class="fruit-item">
+        <a href="Strawberry.html">
+            <img src="Strawberry (Jahberi).jpg" alt="Strawberry">
+            <div class="fruit-info">
+                <h2>Strawberry</h2>
+            </div>
+        </a>
+        </article>
+    <article class="fruit-item">
+        <a href="Sweet Lime.html">
+            <img src="Sweet Lime (Mosambi).jpeg" alt="Sweet Lime">
+            <div class="fruit-info">
+                <h2>Sweet Lime (Mosambi)</h2>
+            </div>
+        </a>
+        </article>
+        <article class="fruit-item">
+            <a href="Tamarind.html">
+                <img src="Tamarind (Imli).jpeg" alt="Tamarind">
+                <div class="fruit-info">
+                    <h2>Tamarind (Imli)</h2>
+                </div>
+            </a>
+            </article>
+            <article class="fruit-item">
+                <a href="Watermelon.html">
+                    <img src="Watermelon (Tarbooz).jpg" alt="Watermelon">
+                    <div class="fruit-info">
+                        <h2>Watermelon (Tarbooz)</h2>
+                    </div>
+                </a>
+                </article>
+               
+
         </section>
     </main>
 
