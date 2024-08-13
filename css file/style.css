@@ -151,7 +151,7 @@ header {
 
 .drone-link,
 .robo-link,
-.mache-link,
+.machine-link,
 .tomato-link,
 .Cauliflower-link,
 .ladyfinger-link,
@@ -166,7 +166,7 @@ header {
 
 .drone-image,
 .robo-image,
-.mache-image,
+.machine-image,
 .tomato-image,
 .Cauliflower-image,
 .ladyfinger-image,
@@ -180,7 +180,7 @@ header {
 
 .drone-link:hover .drone-image,
 .robo-link:hover .robo-image,
-.mache-link:hover .mache-image,
+.machine-link:hover .machine-image,
 .tomato-link:hover .tomato-image,
 .Cauliflower-link:hover .Cauliflower-image,
 .ladyfinger-link:hover .ladyfinger-image,

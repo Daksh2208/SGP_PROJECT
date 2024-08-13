@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     macheLink.addEventListener('click', function() {
-        window.location.href = 'mache.html';
+        window.location.href = 'machine.html';
     });
 
     fulewarLink.addEventListener('click', function() {
