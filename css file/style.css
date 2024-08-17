@@ -226,7 +226,7 @@ header {
 /* Adjust sizes for fruits section */
 /* Adjust sizes and hover effects for fruits section */
 .mango-link .mango-image,
-.jackfruit-link .jackfruit-image,
+.Watermelon-link .Watermelon-image,
 .apple-link .apple-image {
     display: flex;
     width: 100%;
@@ -236,12 +236,12 @@ header {
 }
 
 .mango-link:hover .mango-image,
-.jackfruit-link:hover .jackfruit-image,
+.Watermelon-link:hover .Watermelon-image,
 .apple-link:hover .apple-image {
     transform: scale(1.05);
     opacity: 0.8;
 }
-.mango-link,.jackfruit-link,.apple-link{
+.mango-link,.Watermelon-link,.apple-link{
 display: block;
 position: relative;
 overflow: hidden;
