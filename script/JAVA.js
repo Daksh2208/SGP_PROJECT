@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const droneLink = document.querySelector('.drone-link .image-description');
     const roboLink = document.querySelector('.robo-link .image-description');
-    const macheLink = document.querySelector('.mache-link .image-description');
-    const fulewarLink = document.querySelector('.fulewar-link .image-description');
+    const macheLink = document.querySelector('.machine-link .image-description');
+    const fulewarLink = document.querySelector('.Cauliflower-link .image-description');
     const mangoLink = document.querySelector('.mango-link .image-description');
     const jackfruitLink = document.querySelector('.jackfruit-link .image-description');
     const appleLink = document.querySelector('.apple-link .image-description');

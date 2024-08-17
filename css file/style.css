@@ -207,7 +207,7 @@ header {
     line-height: 1.4;
 }
 
-.technologies,
+.Technology-link,
 .vegetables,
 .trees,.flower {
     width: 12%;
@@ -217,7 +217,7 @@ header {
     background-color: rgb(41, 227, 100);
 }
 
-.tech-link a,
+.Technology-link a,
 .veg-link a,
 .tree-link a,.flower-link a{
     color: rgb(0, 0, 0);
