@@ -13,11 +13,7 @@ body {
 }
 
 header {
-    background-color: #34f100;
-    /* background: linear-gradient(135deg, #47f6ff, #34f100);
-    color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    background-color: #0cff67;
 }
 
 .header-container {
@@ -51,7 +47,7 @@ header {
 }
 
 .main-nav a:hover {
-    background-color: #34f100;
+    background-color: #0cff67;
     border-radius: 5px;
     color: #fff;
 }
@@ -68,13 +64,10 @@ main {
 .fruit-intro h1 {
     font-size: 36px;
     margin-bottom: 15px;
-    color: #34f100;
+    color: #0cff67;
 }
 h2 {
-    background-color: #34f100;
-    /* background: linear-gradient(135deg, #47f6ff, #34f100);
-    transition: background 0.3s, color 0.3s;
-    color:greenyellow */
+    background-color: #0cff67;
 }
 .fruit-intro p {
     font-size: 18px;
@@ -132,7 +125,7 @@ h2 {
 }
 
 footer {
-    background-color: #34f100;
+    background-color: #0cff67;
     /* background: linear-gradient(135deg, #47f6ff, #34f100); */
     color: #fff;
     text-align: center;
