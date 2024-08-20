@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const droneLink = document.querySelector('.drone-link .image-description');
     const roboLink = document.querySelector('.robo-link .image-description');
-    const macheLink = document.querySelector('.machine-link .image-description');
-    const fulewarLink = document.querySelector('.Cauliflower-link .image-description');
+    const machineLink = document.querySelector('.machine-link .image-description');
+    const CauliflowerLink = document.querySelector('.Cauliflower-link .image-description');
     const mangoLink = document.querySelector('.mango-link .image-description');
     const jackfruitLink = document.querySelector('.jackfruit-link .image-description');
     const appleLink = document.querySelector('.apple-link .image-description');
@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'robo.html';
     });
 
-    macheLink.addEventListener('click', function() {
+    machineLink.addEventListener('click', function() {
         window.location.href = 'machine.html';
     });
 
-    fulewarLink.addEventListener('click', function() {
+    CauliflowerLink.addEventListener('click', function() {
         window.location.href = 'Cauliflower.html';
     });
 
