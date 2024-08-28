@@ -15,14 +15,14 @@ html, body {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #e6f7f5;
+    color: #4D4D4D; /* Dark gray text color */
+    background-color: #FAF4F4; /* Light pastel pink background */
     padding: 0;
 }
 
 /* Header styling */
 header {
-    background-color: #228B22; /* Forest green color */
+    background-color: #D9B9C4; /* Soft mauve color */
     color: #f5f5f5;
     padding: 20px 0;
     text-align: center;
@@ -48,7 +48,7 @@ main {
     align-items: center;
     margin-bottom: 20px;
 }
-#daffodil-img {
+#eustoma-img {
     max-width: 15%;
     height: auto;
     border-radius: 10px;
@@ -61,7 +61,7 @@ main {
 
 /* Section styling */
 section {
-    background-color: #fff;
+    background-color: #FFFFFF; /* White background for sections */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -69,16 +69,16 @@ section {
 }
 
 h2 {
-    border-bottom: 3px solid #006400; /* Dark green border */
+    border-bottom: 3px solid #803C54; /* Deep rose border */
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #228B22;
+    color: #803C54; /* Deep rose text color */
 }
 
 h3 {
     font-size: 1.5em;
-    color: #228B22;
+    color: #803C54; /* Deep rose text color */
     margin-bottom: 10px;
 }
 
@@ -95,8 +95,8 @@ li {
 
 /* Footer styling */
 footer {
-    background-color: #228B22;
-    color: #ffffff;
+    background-color: #D9B9C4; /* Soft mauve color */
+    color: #FFFFFF;
     text-align: center;
     padding: 10px 0;
     width: 100%;
