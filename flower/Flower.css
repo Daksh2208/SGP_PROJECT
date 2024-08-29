@@ -14,10 +14,6 @@ body {
 
 header {
     background-color: #0cff67;
-    /* background: linear-gradient(135deg, #47f6ff, #34f100);
-    color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .header-container {
@@ -76,9 +72,6 @@ main {
 }
 h2 {
     background-color: #0cff67;
-    /* background: linear-gradient(135deg, #47f6ff, #34f100);
-    transition: background 0.3s, color 0.3s;
-    color:greenyellow */
 }
 .flower-intro p {
     font-size: 18px;
@@ -137,7 +130,6 @@ h2 {
 
 footer {
     background-color: #0cff67;
-    /* background: linear-gradient(135deg, #47f6ff, #34f100); */
     color: black;
     text-align: center;
     padding: 15px 0;
