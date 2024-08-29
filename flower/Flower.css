@@ -26,6 +26,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    a:visited {
+        color: #000000;
+    }
+
 }
 
 .logo img {
@@ -134,7 +138,7 @@ h2 {
 footer {
     background-color: #0cff67;
     /* background: linear-gradient(135deg, #47f6ff, #34f100); */
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 15px 0;
     position: fixed;
