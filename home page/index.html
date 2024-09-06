@@ -18,6 +18,15 @@
                 <div class="searchbar">
                     <select class="search-dropdown">
                         <option>All</option>
+                        <option value="technologies">Technologies</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="flowers">Flowers</option>
+                        <option value="seeds">Seeds</option>
+                        <option value="fertilizer">Fertilizer</option>
+                        <option value="market-trend">Market Trend</option>
+                        <option value="statistics">Statistics</option>
+                        <option value="programs-schemes">Programs & Schemes</option>
                         <!-- Add more options if needed -->
                     </select>
                     <input type="text" placeholder="Search here" class="search-input">
@@ -145,5 +154,39 @@
             </div>
         </a>
     </div>
+       <!-- More content like vegetables, fruits, flowers, etc. -->
+
+       <script>
+        function searchContent() {
+            // Get the value of the input and convert it to uppercase for case-insensitive search
+            let input = document.getElementById('search-input').value.toUpperCase();
+            
+            // Get all the menu items
+            let menuItems = document.querySelectorAll('#menu-list li');
+            
+            // Get all the content items (links to different technologies, fruits, etc.)
+            let contentItems = document.querySelectorAll('.home-content .content-item');
+            
+            // Loop through the menu items and hide those that don't match the search query
+            for (let i = 0; i < menuItems.length; i++) {
+                let text = menuItems[i].textContent || menuItems[i].innerText;
+                if (text.toUpperCase().indexOf(input) > -1) {
+                    menuItems[i].style.display = "";
+                } else {
+                    menuItems[i].style.display = "none";
+                }
+            }
+            
+            // Loop through the content items and hide those that don't match the search query
+            for (let i = 0; i < contentItems.length; i++) {
+                let text = contentItems[i].textContent || contentItems[i].innerText;
+                if (text.toUpperCase().indexOf(input) > -1) {
+                    contentItems[i].style.display = "";
+                } else {
+                    contentItems[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
 </html> 
