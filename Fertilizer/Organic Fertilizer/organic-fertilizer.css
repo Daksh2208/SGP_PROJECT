@@ -1,0 +1,156 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0cff67;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a:visited {
+        color: #000000;
+    }
+
+}
+
+.logo img {
+    width: 120px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #0cff67;
+    border-radius: 5px;
+    color: #fff;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.Organic-Fertilizer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Organic-Fertilizer h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #0cff67;
+}
+h2 {
+    background-color: #0cff67;
+}
+.Organic-Fertilizer p {
+    font-size: 18px;
+    color: #555;
+}
+
+.Organic-Fertilizer-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Organic-Fertilizer-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(100% - 60px);
+    max-width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Organic-Fertilizer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 166, 255, 0.616);
+}
+
+.Organic-Fertilizer-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.Organic-Fertilizer-item img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.Orhanic-Fertilizer-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.Orhanic-Fertilizer-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.Orhanic-Fertilizer-info p {
+    font-size: 16px;
+    color: #777;
+}
+
+footer {
+    background-color: #0cff67;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgb(0, 172, 252);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .Organic-Fertilizer-item {
+        width: calc(50% - 60px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .Organic-Fertilizer-item {
+        width: calc(33.333% - 60px);
+    }
+}
