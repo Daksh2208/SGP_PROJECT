@@ -14,11 +14,21 @@
             <div class="logo">
                 <img src="/home page/logo.jpeg" alt="Agro Tech">
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/home page/index.html">Home</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for vegetables" oninput="showSuggestions(this.value)">
+                    <button onclick="searchVegetables()">Search</button>
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+
+        </div>
         </div>
     </header>
 
@@ -38,10 +48,10 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Arbi(Taro roots).html">
+                <a href="Arbi.html">
                     <img src="Arbi(Taro roots).jpg" alt="Arbi">
                     <div class="vegetable-info">
-                        <h2>Arbi(Taro roots)</h2>
+                        <h2>Arbi</h2>
                     </div>
                 </a>
             </article>
@@ -55,10 +65,10 @@
             </article>
             </article>
             <article class="vegetable-item">
-                <a href="ash-gourd.html">
+                <a href="Ash gourd.html">
                     <img src="Ash-gourd(Petha).jpg" alt="Ash-gourd">
                     <div class="vegetable-info">
-                        <h2>Ash-gourd</h2>
+                        <h2>Ash gourd</h2>
                     </div>
                 </a>
             </article>
@@ -71,18 +81,18 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Bamboo-shoots.html">
+                <a href="Bamboo shoots.html">
                     <img src="Bamboo-shoots.jpg" alt="Bamboo-shoots">
                     <div class="vegetable-info">
-                        <h2>Bamboo-shoots</h2>
+                        <h2>Bamboo shoots</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Bell-pepper(capsicum).html">
+                <a href="Bell pepper.html">
                     <img src="Bell-pepper(capsicum).jpeg" alt="Bell-pepper">
                     <div class="vegetable-info">
-                        <h2>Bell-pepper</h2>
+                        <h2>Bell pepper</h2>
                     </div>
                 </a>
             </article>
@@ -95,10 +105,10 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Bitter-Gourd-Karela.html">
+                <a href="Bitter Gourd.html">
                     <img src="Bitter-Gourd-Karela.jpg" alt="Bitter-Gourd-Karela">
                     <div class="vegetable-info">
-                        <h2>Bitter-Gourd-Karela</h2>
+                        <h2>Bitter Gourd</h2>
                     </div>
                 </a>
             </article>
@@ -111,18 +121,18 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Bottle-gourd.html">
+                <a href="Bottle gourd.html">
                     <img src="Bottle-gourd.jpeg" alt="Bottle-gourd">
                     <div class="vegetable-info">
-                        <h2>Bottle-gourd</h2>
+                        <h2>Bottle gourd</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Broad-beans.html">
+                <a href="Broad beans.html">
                     <img src="Broad-beans.jpeg" alt="Broad-beans">
                     <div class="vegetable-info">
-                        <h2>Broad-beans</h2>
+                        <h2>Broad beans</h2>
                     </div>
                 </a>
             </article>
@@ -176,18 +186,18 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Cluster-Beans.html">
+                <a href="Cluster Beans.html">
                     <img src="Cluster-Beans.jpg" alt="Cluster-Beans">
                     <div class="vegetable-info">
-                        <h2>Cluster-Beans</h2>
+                        <h2>Cluster Beans</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Colocasia-leaves(arbi ke patte).html">
+                <a href="Colocasia leaves(arbi ke patte).html">
                     <img src="Colocasia-leaves(arbi ke patte).jpg" alt="Colocasia-leaves">
                     <div class="vegetable-info">
-                        <h2>Colocasia-leaves</h2>
+                        <h2>Colocasia leaves</h2>
                     </div>
                 </a>
             </article>
@@ -208,10 +218,10 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Elephant-foot-yam(suran).html">
+                <a href="Elephant foot yam.html">
                     <img src="Elephant-foot-yam(suran).jpg" alt="Elephant-foot-yam">
                     <div class="vegetable-info">
-                        <h2>Elephant-foot-yam</h2>
+                        <h2>Elephant foot yam</h2>
                     </div>
                 </a>
             </article>
@@ -224,26 +234,26 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Fava-bens.html">
+                <a href="Fava bens.html">
                     <img src="Fava-bens.jpg" alt="Fava-bens">
                     <div class="vegetable-info">
-                        <h2>Fava-bens</h2>
+                        <h2>Fava bens</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Fennel-Bulb.html">
+                <a href="Fennel Bulb.html">
                     <img src="Fennel-Bulb.jpeg" alt="Fennel-Bulb">
                     <div class="vegetable-info">
-                        <h2>Fennel-Bulb</h2>
+                        <h2>Fennel Bulb</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Fenugreek-Leaves(Methi).html">
+                <a href="Fenugreek Leaves(Methi).html">
                     <img src="Fenugreek-Leaves(Methi).jpg" alt="Fenugreek-Leaves">
                     <div class="vegetable-info">
-                        <h2>Fenugreek-Leaves</h2>
+                        <h2>Fenugreek Leaves</h2>
                     </div>
                 </a>
             </article>
@@ -272,42 +282,42 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Green-beans(French beans).html">
+                <a href="Green beans.html">
                     <img src="Green-beans(French beans).jpg" alt="Green beans">
                     <div class="vegetable-info">
-                        <h2>Green-beans(French beans)</h2>
+                        <h2>Green beans(French beans)</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Green-chillies.html">
+                <a href="Green chillies.html">
                     <img src="Green-chillies.jpg" alt="Green Chilies">
                     <div class="vegetable-info">
-                        <h2>Green-chilies</h2>
+                        <h2>Green chilies</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Green-peas.html">
+                <a href="Green peas.html">
                     <img src="Green-peas.jpeg" alt="Green-peas">
                     <div class="vegetable-info">
-                        <h2>Green-peas</h2>
+                        <h2>Green peas</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Hyacinth-Beans.html">
+                <a href="Hyacinth Beans.html">
                     <img src="Hyacinth-Beans.jpeg" alt="Hyacinth-Beans">
                     <div class="vegetable-info">
-                        <h2>Hyacinth-Beans</h2>
+                        <h2>Hyacinth Beans</h2>
                     </div>
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Ivy-Gourd.html">
+                <a href="Ivy Gourd.html">
                     <img src="Ivy-Gourd.jpg" alt="Ivy-Gourd">
                     <div class="vegetable-info">
-                        <h2>Ivy-Gourd</h2>
+                        <h2>Ivy Gourd</h2>
                     </div>
                 </a>
             </article>
@@ -376,7 +386,7 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Mustard_Greens.html">
+                <a href="Mustard Greens.html">
                     <img src="Mustard_Greens(Sarson).jpeg" alt="Mustard Greens">
                     <div class="vegetable-info">
                         <h2>Mustard Greens</h2>
@@ -384,7 +394,7 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Nettle_Leaves.html">
+                <a href="Nettle Leaves.html">
                     <img src="Nettle_Leaves(Bichu buti).jpg" alt="Nettle Leaves">
                     <div class="vegetable-info">
                         <h2>Nettle Leaves</h2>
@@ -416,7 +426,7 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Quinoa_Leaves.html">
+                <a href="Quinoa Leaves.html">
                     <img src="Quinoa_Leaves.jpeg" alt="Quinoa Leaves">
                     <div class="vegetable-info">
                         <h2>Quinoa Leaves</h2>
@@ -432,7 +442,7 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Ridge_Gourd.html">
+                <a href="Ridge Gourd.html">
                     <img src="Ridge_Gourd(Turai).jpeg" alt="Ridge Gourd">
                     <div class="vegetable-info">
                         <h2>Ridge Gourd</h2>
@@ -440,7 +450,7 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Rocket_Leaves.html">
+                <a href="Rocket Leaves.html">
                     <img src="Rocket_Leaves(Arugula).jpeg" alt="Arugula">
                     <div class="vegetable-info">
                         <h2>Rocket Leaves</h2>
@@ -456,7 +466,7 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Spring_Onion.html">
+                <a href="Spring Onion.html">
                     <img src="Spring_Onion.jpg" alt="Spring Onion">
                     <div class="vegetable-info">
                         <h2>Spring Onion</h2>
@@ -464,7 +474,7 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Sweet_Potato.html">
+                <a href="Sweet Potato.html">
                     <img src="Sweet_Potato.jpg" alt="Sweet Potato">
                     <div class="vegetable-info">
                         <h2>Sweet Potato</h2>
@@ -496,7 +506,7 @@
                 </a>
             </article>
             <article class="vegetable-item">
-                <a href="Yardlong_Beans.html">
+                <a href="Yardlong Beans.html">
                     <img src="Yardlong_Beans.jpg" alt="Yardlong Beans">
                     <div class="vegetable-info">
                         <h2>Yardlong Beans</h2>
@@ -517,6 +527,6 @@
     <footer>
         <p>&copy; 2024 Agro Tech. All rights reserved.</p>
     </footer>
+    <script src="/script/vegetable.js"></script>
 </body>
-
 </html>

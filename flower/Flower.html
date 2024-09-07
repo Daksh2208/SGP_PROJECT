@@ -14,13 +14,24 @@
             <div class="logo">
                 <img src="/home page/logo.jpeg" alt="Agro Tech">
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/home page/index.html">Home</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for flowers" oninput="showSuggestions(this.value)">
+                    <button onclick="searchVegetables()">Search</button>
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+
+        </div>
         </div>
     </header>
+
 
     <main>
         <section class="flower-intro">
@@ -29,6 +40,14 @@
         </section>
 
         <section class="flower-gallery">
+            <article class="flower-item">
+                <a href="Azalea.html">
+                    <img src="Azalea.jpeg" alt="Azalea">
+                    <div class="flower-info">
+                        <h2>Azalea</h2>
+                    </div>
+                </a>
+            </article>
             <article class="flower-item">
                 <a href="Amaryllis.html">
                     <img src="Amaryllis.jpeg" alt="Amaryllis">
@@ -311,6 +330,14 @@
                     <img src="Lily.jpg" alt="Lily">
                     <div class="flower-info">
                         <h2>Lily</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="flower-item">
+                <a href="Lilac.html">
+                    <img src="Lilac.jpeg" alt="Lilac">
+                    <div class="flower-info">
+                        <h2>Lilac</h2>
                     </div>
                 </a>
             </article>
@@ -601,6 +628,7 @@
     <footer>
         <p>&copy; 2024 Agro Tech. All rights reserved.</p>
     </footer>
+    <script src="/script/flower.js"></script>
 </body>
 
 </html>

@@ -14,11 +14,21 @@
             <div class="logo">
                 <img src="/home page/logo.jpeg" alt="Agro Tech">
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/home page/index.html">Home</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for fruits" oninput="showSuggestions(this.value)">
+                    <button onclick="searchVegetables()">Search</button>
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+
+        </div>
         </div>
     </header>
 
@@ -87,6 +97,22 @@
                 </a>
             </article>
             <article class="fruit-item">
+                <a href="Blueberry.html">
+                    <img src="Blueberry.jpeg" alt="Blueberry">
+                    <div class="fruit-info">
+                        <h2>Blueberry</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="fruit-item">
+                <a href="Cantaloupe.html">
+                    <img src="Cantaloupe.jpeg" alt="Cantaloupe">
+                    <div class="fruit-info">
+                        <h2>Cantaloupe</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="fruit-item">
                 <a href="Carambola.html">
                     <img src="Carambola (Starfruit).jpeg" alt="Carambola">
                     <div class="fruit-info">
@@ -99,6 +125,14 @@
                     <img src="Cashew Apple.jpg" alt="Cashew Apple">
                     <div class="fruit-info">
                         <h2>Cashew Apple</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="fruit-item">
+                <a href="Cranberry.html">
+                    <img src="Cranberry.jpeg" alt="Cranberry">
+                    <div class="fruit-info">
+                        <h2>Cranberry</h2>
                     </div>
                 </a>
             </article>
@@ -135,10 +169,26 @@
                 </a>
             </article>
             <article class="fruit-item">
+                <a href="Durian Fruit.html">
+                    <img src="Durian Fruit.jpeg" alt="Durian Fruit">
+                    <div class="fruit-info">
+                        <h2>Durian Fruit</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="fruit-item">
                 <a href="Fig.html">
                     <img src="Fig (Anjeer).jpg" alt="Fig">
                     <div class="fruit-info">
                         <h2>Fig (Anjeer)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="fruit-item">
+                <a href="Feijoa.html">
+                    <img src="Feijoa.png" alt="Fig">
+                    <div class="fruit-info">
+                        <h2>Feijoa</h2>
                     </div>
                 </a>
             </article>
@@ -367,14 +417,14 @@
                     </div>
                 </a>
             </article>
-            <!-- <article class="fruit-item">
+            <article class="fruit-item">
                 <a href="Ziziphus.html">
                     <img src="Ziziphus (Ber).jpeg" alt="Ziziphus">
                     <div class="fruit-info">
                         <h2>Ziziphus (Ber)</h2>
                     </div>
                 </a>
-            </article> -->
+            </article>
 
         </section>
     </main>
@@ -382,6 +432,7 @@
     <footer>
         <p>&copy; 2024 Agro Tech. All rights reserved.</p>
     </footer>
+    <script src="/script/Fruit.js"></script>
 </body>
 
 </html>
