@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e8f5e9, #dcedc8);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #388e3c;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #66bb6a;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f1f8e9;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #5d4037;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e8f5e9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Highlighting Important Points */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #b2dfdb;
+    color: #004d40;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 6px solid #00796b;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li strong {
+    color: #388e3c;
+}
+
+/* Introduction Section */
+.introduction {
+    background-color: #fffde7;
+    border: 2px dashed #ffeb3b;
+}
+
+/* Crop, Vegetable, and Fruit List */
+.crop-info ul li {
+    background-color: #b9fbc0;
+    border-left-color: #004d40;
+}
+
+/* Soil Condition */
+.soil-condition {
+    background-color: #ffecb3;
+    border-left: 4px solid #ff7043;
+}
+
+/* Usage Instructions */
+.usage ul li {
+    background-color: #ffccbc;
+    border-left-color: #ff5722;
+}
+
+/* Nutrient Composition Section */
+.nutrient-content {
+    background-color: #fff9c4;
+    border-left: 4px solid #fbc02d;
+}
+
+.nutrient-content ul li {
+    background-color: #fff59d;
+    color: #3e2723;
+}
+
+/* Benefits Section */
+.benefits ul li {
+    background-color: #d1c4e9;
+    border-left-color: #7e57c2;
+}
+
+/* Disadvantages Section */
+.disadvantages ul li {
+    background-color: #ffab91;
+    border-left-color: #e64a19;
+}
+
+/* Cautions Section */
+.cautions ul li {
+    background-color: #ffccbc;
+    border-left-color: #d84315;
+}
+
+/* Companies Section */
+.companies ul li {
+    background-color: #c5e1a5;
+    border-left-color: #388e3c;
+}
+
+/* Environmental Impact Section */
+.environmental-impact {
+    background-color: #dcedc8;
+    border-left: 4px solid #558b2f;
+}
+
+/* Research Topics */
+section h2 {
+    font-size: 22px;
+    color: #4caf50;
+}
+
+/* Buttons or Call to Action (if needed) */
+button {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Hover Effects for Sections */
+section:hover {
+    background-color: #f0f4c3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
