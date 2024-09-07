@@ -11,19 +11,19 @@ body {
 h1 {
     font-size: 36px;
     font-weight: bold;
-    color: #004d40; /* Dark green color for the title */
+    color: #003c8f; /* Deep blue color for the title */
     text-align: center;
     margin: 20px 0;
     padding: 10px;
-    background-color: #e0f2f1; /* Very light green background for the title */
+    background-color: #dbe6f4; /* Light blue background for the title */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1:hover {
-    background-color: #b2dfdb; /* Slightly darker green on hover */
-    color: #00251a; /* Darker green text color on hover */
+    background-color: #b3cde0; /* Slightly darker blue on hover */
+    color: #00274d; /* Darker blue text color on hover */
 }
 
 /* Container Styles */
@@ -100,7 +100,7 @@ ul li ul li {
 
 /* Link Styles */
 a {
-    color: #004d40; /* Dark green color for links */
+    color: #004d40; /* Teal color for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
