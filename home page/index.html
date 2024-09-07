@@ -16,32 +16,33 @@
             </div>
             <div class="searchbar-container">
                 <div class="searchbar">
-                    <select class="search-dropdown">
-                        <option>All</option>
-                        <option value="technologies">Technologies</option>
-                        <option value="vegetables">Vegetables</option>
-                        <option value="fruits">Fruits</option>
-                        <option value="flowers">Flowers</option>
-                        <option value="seeds">Seeds</option>
-                        <option value="fertilizer">Fertilizer</option>
-                        <option value="market-trend">Market Trend</option>
-                        <option value="statistics">Statistics</option>
-                        <option value="programs-schemes">Programs & Schemes</option>
+                        <select class="search-dropdown" id="search-dropdown" onchange="navigateToPage()">
+                        <option value="">All</option> <!-- No action, "All" is just a placeholder -->
+                        <option value="/Technology/Technologies.html">Technologies</option> <!-- Link to Technologies.html -->
+                        <option value="/vegetable/vegetable.html">Vegetables</option> <!-- Link to vegetable.html -->
+                        <option value="/fruit/fruit.html">Fruits</option> <!-- Link to fruit.html -->
+                        <option value="/flower/Flower.html">Flowers</option> <!-- Link to Flower.html -->
+                        <option value="seeds.html">Seeds</option> <!-- Link to seeds.html -->
+                        <option value="/Fertilizer/Fertilizer.html">Fertilizer</option> <!-- Link to Fertilizer.html -->
+                        <option value="market-trend.html">Market Trend</option> <!-- Link to market-trend.html -->
+                        <option value="Statistic.html">Statistics</option> <!-- Link to Statistic.html -->
+                        <option value="Programs&Schemes.html">Programs & Schemes</option> <!-- Link to Programs&Schemes.html -->
                         <!-- Add more options if needed -->
                     </select>
-                    <input type="text" placeholder="Search here" class="search-input">
+                    <script src="script.js"></script>
+                    <input type="text" id="search-input" placeholder="Search here" class="search-input" onkeyup="searchContent()">
                     <div class="search-icon">
                         <img src="bino.png" alt="Search">
                     </div>
-
                 </div>
-                
             </div>
         </div>
     </header>
+
+    <!-- Navigation Menu -->
     <div class="menu">
         <nav class="menu-bar">
-            <ul>
+            <ul id="nav-menu">
                 <li><a href="category.html" target="_blank">Category</a></li>
                 <li><a href="/Technology/Technologies.html" target="_blank">Technologies</a></li>
                 <li><a href="/vegetable/vegetable.html" target="_blank">Vegetables</a></li>
@@ -56,6 +57,7 @@
             </ul>
         </nav>
     </div>
+
     <div class="arg">
         <img src="home_image.jpg" width="100%" alt="Header Image">
     </div>
@@ -154,39 +156,27 @@
             </div>
         </a>
     </div>
-       <!-- More content like vegetables, fruits, flowers, etc. -->
-
-       <script>
+    <!-- JavaScript to filter nav links -->
+    <script>
         function searchContent() {
-            // Get the value of the input and convert it to uppercase for case-insensitive search
             let input = document.getElementById('search-input').value.toUpperCase();
-            
-            // Get all the menu items
-            let menuItems = document.querySelectorAll('#menu-list li');
-            
-            // Get all the content items (links to different technologies, fruits, etc.)
-            let contentItems = document.querySelectorAll('.home-content .content-item');
-            
-            // Loop through the menu items and hide those that don't match the search query
-            for (let i = 0; i < menuItems.length; i++) {
-                let text = menuItems[i].textContent || menuItems[i].innerText;
-                if (text.toUpperCase().indexOf(input) > -1) {
-                    menuItems[i].style.display = "";
+            let navMenu = document.getElementById('nav-menu');
+            let navItems = navMenu.getElementsByTagName('li');
+
+            // Loop through the navigation items
+            for (let i = 0; i < navItems.length; i++) {
+                let aTag = navItems[i].getElementsByTagName('a')[0];
+                let txtValue = aTag.textContent || aTag.innerText;
+                
+                // Show or hide the items based on search input
+                if (txtValue.toUpperCase().indexOf(input) > -1) {
+                    navItems[i].style.display = "";
                 } else {
-                    menuItems[i].style.display = "none";
-                }
-            }
-            
-            // Loop through the content items and hide those that don't match the search query
-            for (let i = 0; i < contentItems.length; i++) {
-                let text = contentItems[i].textContent || contentItems[i].innerText;
-                if (text.toUpperCase().indexOf(input) > -1) {
-                    contentItems[i].style.display = "";
-                } else {
-                    contentItems[i].style.display = "none";
+                    navItems[i].style.display = "none";
                 }
             }
         }
     </script>
 </body>
-</html> 
+
+</html>
