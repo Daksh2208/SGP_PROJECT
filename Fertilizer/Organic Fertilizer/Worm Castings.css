@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f5f5; /* Light background for a clean look */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Styles */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #003c8f; /* Deep blue color for the title */
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #dbe6f4; /* Light blue background for the title */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1:hover {
+    background-color: #87cefa; /* Sky blue on hover */
+    color: #00274d; /* Darker blue text color on hover */
+}
+
+/* Container Styles */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff; /* White background for the content area */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #e8f5e9; /* Light green background for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    background: #b2fab4; /* Light lime green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+section:hover h2 {
+    color: #004d40; /* Darker teal color for headings on hover */
+}
+
+/* Section Heading Styles */
+section h2 {
+    color: #00796b; /* Teal color for section headings */
+    font-size: 28px;
+    border-bottom: 3px solid #00796b; /* Teal border under headings */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+section h2:hover {
+    color: #004d40; /* Darker teal color for headings on hover */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 8px;
+    border-left: 5px solid #00796b; /* Teal border for list items */
+    background-color: #f1f8e9; /* Very light green background for list items */
+    transition: background-color 0.3s ease, border-left-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #d3f9c7; /* Light mint green on hover */
+    border-left-color: #004d40; /* Darker teal border on hover */
+}
+
+ul li ul {
+    padding-left: 20px;
+}
+
+ul li ul li {
+    margin: 5px 0;
+    border-left: 3px solid #004d40; /* Darker teal border for nested list items */
+}
+
+/* Link Styles */
+a {
+    color: #004d40; /* Teal color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #003c8f; /* Deep blue color for links on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
