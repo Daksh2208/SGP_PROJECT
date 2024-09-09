@@ -14,14 +14,22 @@
             <div class="logo">
                 <img src="/home page/logo.jpeg" alt="Agro Tech">
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/home page/index.html">Home</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for Inorganic Fertilizer" oninput="showSuggestions(this.value)">
+                    <button onclick="searchFertilizers()">Search</button>
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+        </div>
         </div>
     </header>
-
     <main>
         <section class="Inorganic-Fertilizer">
             <h1>Inorganic Fertilizer List</h1>
@@ -381,6 +389,7 @@
     <footer>
         <p>&copy; 2024 Agro Tech. All rights reserved.</p>
     </footer>
+    <script src="/script/Inorganic_Fertilizer.js"></script>
 </body>
 
 </html>

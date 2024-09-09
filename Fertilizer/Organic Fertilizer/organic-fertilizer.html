@@ -14,11 +14,21 @@
             <div class="logo">
                 <img src="/home page/logo.jpeg" alt="Agro Tech">
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/home page/index.html">Home</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for Organic Fertilizer" oninput="showSuggestions(this.value)">
+                    <button onclick="searchFertilizers()">Search</button>
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+
+        </div>
         </div>
     </header>
 
@@ -461,14 +471,14 @@
                     </div>
                 </a>
             </article>
-            <!-- <article class="Organic-Fertilizer-item">
+            <article class="Organic-Fertilizer-item">
                 <a href="Yarrow Compost.html">
                     <img src="Yarrow Compost.jpg" alt="Yarrow Compost">
                     <div class="Orhanic-Fertilizer-info">
                         <h2>Yarrow Compost</h2>
                     </div>
                 </a>
-            </article> -->
+            </article>
 
 
         </section>
@@ -477,6 +487,6 @@
     <footer>
         <p>&copy; 2024 Agro Tech. All rights reserved.</p>
     </footer>
+    <script src="/script/Organic_Fertilizer.js"></script>
 </body>
-
 </html>

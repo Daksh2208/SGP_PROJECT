@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
@@ -14,6 +14,7 @@ body {
 
 header {
     background-color: #0cff67;
+    padding: 10px 0; /* Optional: adjust padding as needed */
 }
 
 .header-container {
@@ -21,39 +22,115 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    a:visited {
-        color: #000000;
-    }
-
+    justify-content: space-between; /* Space between logo and header-right */
 }
 
 .logo img {
     width: 120px;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allows header-right to take up remaining space */
+    justify-content: flex-end; /* Aligns items within header-right to the end */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: rgba(76, 175, 80, 0.2); /* Light green for harmony */
+    backdrop-filter: blur(8px);
+    padding: 5px 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    margin-right: 10px; /* Increased space between search bar and navigation */
+}
+
+.search-bar input {     
+    padding: 8px 40px; /* Increased padding for a bigger input box */
+    border: none;
+    border-radius: 25px;
+    background: transparent;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent button */
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.search-bar input::placeholder {
+    color: rgba(0, 0, 0, 0.7); /* Placeholder color */
+}
+
+/* Suggestions Box */
+.suggestions-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+.suggestions-box div {
+    padding: 10px;
+    cursor: pointer;
+    color: black; /* Text color */
+    transition: background 0.3s ease;
+}
+
+.suggestions-box div:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Navigation Menu */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 .main-nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
 }
 
 .main-nav li {
-    position: relative;
+    margin: 0 15px;
 }
 
 .main-nav a {
-    color: #fff;
     text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
     padding: 10px 15px;
-    font-size: 16px;
-    transition: background 0.3s, color 0.3s;
-}
-
-.main-nav a:hover {
-    background-color: #0cff67;
     border-radius: 5px;
-    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 main {

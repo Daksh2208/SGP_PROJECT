@@ -11,6 +11,7 @@ const vegetables = [
     "Turnip", "Yam", "Yardlong Beans", "Zucchini"
 ];
 
+
 // Function to show autocomplete suggestions
 function showSuggestions(value) {
     const suggestionsBox = document.getElementById('suggestions');
@@ -18,13 +19,13 @@ function showSuggestions(value) {
 
     if (value) {
         const regex = new RegExp(value, 'i');
-        const filteredVegetables = vegetables.filter(veg => regex.test(veg));
+        const filteredVegetables = vegetables.filter(vegetable => regex.test(vegetable));
 
-        filteredVegetables.forEach(veg => {
+        filteredVegetables.forEach(vegetable => {
             const div = document.createElement('div');
-            div.textContent = veg;
+            div.textContent = vegetable;
             div.onclick = function() {
-                document.getElementById('search-input').value = veg;
+                document.getElementById('search-input').value = vegetable;
                 suggestionsBox.innerHTML = '';
                 searchVegetables();
             };
@@ -42,7 +43,7 @@ function showSuggestions(value) {
 // Function to handle search
 function searchVegetables() {
     const query = document.getElementById('search-input').value.toLowerCase();
-    const articles = document.querySelectorAll('.vegetable-item');
+    const articles = document.querySelectorAll('.vegetable-item'); // Adjust class name as needed
 
     articles.forEach(article => {
         const title = article.querySelector('h2').textContent.toLowerCase();
