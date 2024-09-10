@@ -47,16 +47,16 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease;
-    margin-right: 10px; /* Increased space between search bar and navigation */
+    margin-right: 40px; /* Increased space between search bar and navigation */
 }
 
-.search-bar input {     
-    padding: 8px 40px; /* Increased padding for a bigger input box */
+.search-bar input {
+    padding: 8px 10px;
     border: none;
     border-radius: 25px;
     background: transparent;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
     transition: background 0.3s ease;
 }
@@ -68,7 +68,7 @@ header {
     color: black;
     border-radius: 20px;
     cursor: pointer;
-    margin-left: auto;
+    margin-left: 10px;
     transition: background 0.3s ease;
 }
 
