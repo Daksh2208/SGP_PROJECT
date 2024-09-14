@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #f0f0f0); /* Gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Title Styles */
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #d32f2f; /* Deep red color for the title */
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffebee; /* Light red background for the title */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    transition: background-color 0.4s ease, color 0.4s ease, transform 0.2s ease;
+    letter-spacing: 1.2px; /* Spacing between letters */
+}
+
+h1:hover {
+    background-color: #ffcdd2; /* Darker red on hover */
+    color: #b71c1c; /* Dark red text color on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff; /* White background for the content area */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Larger shadow for depth */
+    animation: fadeIn 0.8s ease; /* Smooth fade-in animation */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #e0f2f1; /* Light green-blue background for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00796b; /* Teal color for section headings */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #b2dfdb; /* Underline effect */
+}
+
+section h2:hover {
+    color: #004d40; /* Darker teal on hover */
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 18px;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+ul li:hover {
+    color: #00796b;
+    transform: translateX(5px); /* Subtle movement on hover */
+}
+
+ul li::before {
+    content: "✔"; /* Add a check mark before each list item */
+    color: #00796b;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Button Styles */
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1); /* Return to original size on click */
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p, ul li {
+        font-size: 16px;
+    }
+}
