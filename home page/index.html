@@ -8,22 +8,6 @@
     <link rel="stylesheet" href="/css file/style.css">
 </head>
 
-
-<!-- 
-<head>
-   
-    <title>Weather App</title>
-</head>
-<body>
-    <h2>Weather in Your City</h2>
-    <div id="weather">
-        <p id="location"></p>
-        <p id="temperature"></p>
-        <p id="description"></p>
-    </div>
-
-    <script src="weather.js"></script> 
-    Link to the JavaScript -->
 </body>
 </html>
 
@@ -35,19 +19,19 @@
             </div>
             <div class="searchbar-container">
                 <div class="searchbar">
-                        <select class="search-dropdown" id="search-dropdown" onchange="navigateToPage()">
-                        <option value="">All</option> <!-- No action, "All" is just a placeholder -->
-                        <option value="/Technology/Technologies.html">Technologies</option> <!-- Link to Technologies.html -->
-                        <option value="/vegetable/vegetable.html">Vegetables</option> <!-- Link to vegetable.html -->
-                        <option value="/fruit/fruit.html">Fruits</option> <!-- Link to fruit.html -->
-                        <option value="/flower/Flower.html">Flowers</option> <!-- Link to Flower.html -->
-                        <option value="seeds.html">Seeds</option> <!-- Link to seeds.html -->
-                        <option value="/Fertilizer/Fertilizer.html">Fertilizer</option> <!-- Link to Fertilizer.html -->
-                        <option value="market-trend.html">Market Trend</option> <!-- Link to market-trend.html -->
-                        <option value="Statistic.html">Statistics</option> <!-- Link to Statistic.html -->
-                        <option value="Programs&Schemes.html">Programs & Schemes</option> <!-- Link to Programs&Schemes.html -->
-                        <!-- Add more options if needed -->
-                    </select>
+                        <!-- <select class="search-dropdown" id="search-dropdown" onchange="navigateToPage()"> -->
+                        <!-- <option value="">All</option> 
+                        <option value="/Technology/Technologies.html">Technologies</option>
+                        <option value="/vegetable/vegetable.html">Vegetables</option> 
+                        <option value="/fruit/fruit.html">Fruits</option> 
+                        <option value="/flower/Flower.html">Flowers</option> 
+                        <option value="seeds.html">Seeds</option> 
+                        <option value="/Fertilizer/Fertilizer.html">Fertilizer</option> 
+                        <option value="market-trend.html">Market Trend</option>
+                        <option value="Statistic.html">Statistics</option> 
+                        <option value="Programs&Schemes.html">Programs & Schemes</option>  -->
+                       
+                    <!-- </select> -->
                     <script src="script.js"></script>
                     <input type="text" id="search-input" placeholder="Search here" class="search-input" onkeyup="searchContent()">
                     <div class="search-icon">
@@ -72,7 +56,7 @@
                 <li><a href="market-trend.html" target="_blank">Market Trend</a></li>
                 <li><a href="Statistic.html" target="_blank">Statistic</a></li>
                 <li><a href="Programs&Schemes.html" target="_blank">Programs & Schemes</a></li>
-                <li><a href="/weather/weather.html" target="_blank">Weather</a></li>
+                <!-- <li><a href="/weather/weather.html" target="_blank">Weather</a></li> -->
                 <!-- Add more menu items as needed -->
             </ul>
         </nav>
@@ -177,7 +161,7 @@
         </a>
     </div>
     <!-- JavaScript to filter nav links -->
-    <script>
+    <!-- <script>
         function searchContent() {
             let input = document.getElementById('search-input').value.toUpperCase();
             let navMenu = document.getElementById('nav-menu');
@@ -196,6 +180,54 @@
                 }
             }
         }
+    </script> -->
+    <script>
+// Add event listener for search input
+document.getElementById('search-input').addEventListener('keypress', function (event) {
+    if (event.key === "Enter") {
+        performSearch();
+    }
+});
+
+// Function to perform search and navigate to respective file
+function performSearch() {
+    let input = document.getElementById('search-input').value.toLowerCase().trim();
+    let baseUrl = window.location.origin;  // Get the base URL for redirection
+
+    // Search map for input to file mapping
+    const searchMap = {
+        'technologies': '/Technology/Technologies.html',
+        'drone': '/Technology/Agriculture-drone.html',
+        'robot': '/Technology/Smart_Robot.html',
+        'machine': '/Technology/machine.html',
+        'vegetables': '/vegetable/vegetable.html',
+        'fruits': '/fruit/fruit.html',
+        'tomatoes': '/vegetable/tomatoes.html',
+        'cauliflower': '/vegetable/Cauliflower.html',
+        'ladyfinger': '/vegetable/Ladyfinger.html',
+        'mango': '/TREES/Mango.html',
+        'watermelon': '/fruit/Watermelon.html',
+        'apple': '/TREES/apple.html',
+        'flowers': '/flower/Flower.html',
+        'marigold': '/flower/Marigold.html',
+        'rose': '/flower/Rose.html',
+        'sunflower': '/flower/sunflower.html',
+        'fertilizer': '/Fertilizer/Fertilizer.html',
+        'market trend': 'market-trend.html',
+        'statistics': 'Statistic.html',
+        'programs': 'Programs&Schemes.html'
+    };
+
+    // Check if the input matches any key in the searchMap
+    if (searchMap[input]) {
+        window.location.href = baseUrl + searchMap[input];
+    } else {
+        alert(`No results found for "${input}". Please try again.`);
+    }
+}
+
+
+
     </script>
 </body>
 
