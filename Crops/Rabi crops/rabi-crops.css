@@ -137,12 +137,12 @@ main {
     padding: 40px 20px;
 }
 
-.Inorganic-Fertilizer {
+.Rabi-Crop {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.Inorganic-Fertilizer h1 {
+.Rabi-Crop h1 {
     font-size: 36px;
     margin-bottom: 15px;
     color: #0cff67;
@@ -150,19 +150,19 @@ main {
 h2 {
     background-color: #0cff67;
 }
-.Inorganic-Fertilizer p {
+.Rabi-Crop p {
     font-size: 18px;
     color: #555;
 }
 
-.Inorganic-Fertilizer-gallery {
+.Rabi-Crop-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
 
-.Inorganic-Fertilizer-item {
+.Rabi-Crop-item {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -172,35 +172,35 @@ h2 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.Inorganic-Fertilizer-item:hover {
+.Rabi-Crop-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 166, 255, 0.616);
 }
 
-.Inorganic-Fertilizer-item img {
+.Rabi-Crop-item img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     transition: opacity 0.3s, transform 0.3s;
 }
 
-.Inorganic-Fertilizer-item img:hover {
+.Rabi-Crop-item img:hover {
     opacity: 0.8;
     transform: scale(1.05);
 }
 
-.Inorganic-Fertilizer-info {
+.Rabi-Crop-info {
     padding: 20px;
     text-align: center;
 }
 
-.Inorganic-Fertilizer-info h2 {
+.Rabi-Crop-info h2 {
     font-size: 22px;
     margin-bottom: 10px;
     color: #333;
 }
 
-.Inorganic-Fertilizer-info p {
+.Rabi-Crop p {
     font-size: 16px;
     color: #777;
 }
@@ -221,13 +221,13 @@ footer p {
 }
 
 @media (min-width: 768px) {
-    .Inorganic-Fertilizer-item {
+    .Rabi-Crop-item {
         width: calc(50% - 60px);
     }
 }
 
 @media (min-width: 1024px) {
-    .Inorganic-Fertilizer-item {
+    .Rabi-Crop-item {
         width: calc(33.333% - 60px);
     }
 }

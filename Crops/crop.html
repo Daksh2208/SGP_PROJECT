@@ -14,621 +14,189 @@
             <div class="logo">
                 <img src="/home page/logo.jpeg" alt="Agro Tech">
             </div>
-            <div class="header-right">
-                <!-- Search Bar with Autocomplete -->
-                <div class="search-bar">
-                    <input type="text" id="search-input" placeholder="Search for crops" oninput="showSuggestions(this.value)">
-                    <button onclick="searchCrops()">Search</button>
-                    <div id="suggestions" class="suggestions-box"></div>
-                </div>
-                <!-- Navigation Menu -->
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
-                    </ul>
-                </nav>
-
-        </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/home page/index.html">Home</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
-
     <main>
-        <section class="crop-intro">
-            <h1>Crops List</h1>
-            <p>Explore various Crops and their cultivation techniques.</p>
-        </section>
+        <h1>
+            <center>Crop Category</center>
+        </h1>
+        <div class="button-container">
+            <!-- Kharif Crops -->
+            <a href="/Crops/Kharif Crops/kharif-crops.html" class="button">Kharif Crops</a>
 
-        <section class="crop-gallery">
-            <article class="crop-item">
-                <a href="Azalea.html">
-                    <img src="Azalea.jpeg" alt="Azalea">
-                    <div class="crop-info">
-                        <h2>Azalea</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Amaryllis.html">
-                    <img src="Amaryllis.jpeg" alt="Amaryllis">
-                    <div class="crop-info">
-                        <h2>Amaryllis</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Anthurium.html">
-                    <img src="Anthurium.jpeg" alt="Anthurium">
-                    <div class="crop-info">
-                        <h2>Anthurium</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Aster.html">
-                    <img src="Aster.jpeg" alt="Aster">
-                    <div class="crop-info">
-                        <h2>Aster</h2>
-                    </div>
-                </a>
-            </article>
-            </article>
-            <article class="crop-item">
-                <a href="Balsam.html">
-                    <img src="Balsam.jpg" alt="Balsam">
-                    <div class="crop-info">
-                        <h2>Balsam</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Bluebell.html">
-                    <img src="Bluebell.jpeg" alt="Bluebell">
-                    <div class="crop-info">
-                        <h2>Bluebell</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Bougainvillea.html">
-                    <img src="Bougainvillea.jpeg" alt="Bougainvillea">
-                    <div class="crop-info">
-                        <h2>Bougainvillea</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Canna Lily.html">
-                    <img src="Canna Lily.jpeg" alt="Canna Lily">
-                    <div class="crop-info">
-                        <h2>Canna Lily</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Carnation.html">
-                    <img src="Carnation.jpg" alt="Carnation">
-                    <div class="crop-info">
-                        <h2>Carnation</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Chrysanthemum.html">
-                    <img src="Chrysanthemum.jpeg" alt="Chrysanthemum">
-                    <div class="crop-info">
-                        <h2>Chrysanthemum</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Daffodil.html">
-                    <img src="Daffodil.jpg" alt="Daffodil">
-                    <div class="crop-info">
-                        <h2>Daffodil</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Dahlia.html">
-                    <img src="Dahlia.jpeg" alt="Dahlia">
-                    <div class="crop-info">
-                        <h2>Dahlia</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Daisy.html">
-                    <img src="Daisy.jpg" alt="Daisy">
-                    <div class="crop-info">
-                        <h2>Daisy</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Erythrina.html">
-                    <img src="Erythrina.jpg" alt="Erythrina">
-                    <div class="crop-info">
-                        <h2>Erythrina</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Eustoma.html">
-                    <img src="Eustoma.jpg" alt="Eustoma">
-                    <div class="crop-info">
-                        <h2>Eustoma</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Evening Primrose.html">
-                    <img src="Evening Primrose.jpg" alt="Evening Primrose">
-                    <div class="crop-info">
-                        <h2>Evening Primrose</h2>
-                    </div>
-                </a>
-            </article>
-            </article>
-            <article class="crop-item">
-                <a href="Flax crop.html">
-                    <img src="Flax crop.jpg" alt="Flax crop">
-                    <div class="crop-info">
-                        <h2>Flax crop</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Forget-Me-Not.html">
-                    <img src="Forget-Me-Not.jpg" alt="Forget-Me-Not">
-                    <div class="crop-info">
-                        <h2>Forget-Me-Not</h2>
-                    </div>
-                </a>
-            </article>
-          
-            </article>
-            <article class="crop-item">
-                <a href="Frangipani.html">
-                    <img src="Frangipani.jpeg" alt="Frangipani">
-                    <div class="crop-info">
-                        <h2>Frangipani</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Gardenia.html">
-                    <img src="Gardenia.jpg" alt="Gardenia">
-                    <div class="crop-info">
-                        <h2>Gardenia</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Gerbera.html">
-                    <img src="Gerbera.jpg" alt="Gerbera">
-                    <div class="crop-info">
-                        <h2>Gerbera</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Gladiolus.html">
-                    <img src="Gladiolus.jpeg" alt="Gladiolus">
-                    <div class="crop-info">
-                        <h2>Gladiolus</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Hibiscus.html">
-                    <img src="Hibiscus.jpeg" alt="Hibiscus">
-                    <div class="crop-info">
-                        <h2>Hibiscus</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Hollyhock.html">
-                    <img src="Hollyhock.jpeg" alt="Hollyhock">
-                    <div class="crop-info">
-                        <h2>Hollyhock</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Hydrangea.html">
-                    <img src="Hydrangea.jpeg" alt="Hydrangea">
-                    <div class="crop-info">
-                        <h2>Hydrangea</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Indian Blanket crop.html">
-                    <img src="Indian Blanket crop (Gaillardia).jpg" alt="Indian Blanket crop (Gaillardia)">
-                    <div class="crop-info">
-                        <h2>Indian Blanket crop (Gaillardia)</h2>
-                    </div>
-                </a>
-            </article>
+            <!-- Rabi Crops -->
+            <a href="/Crops/Rabi Crops/rabi-crops.html" class="button">Rabi Crops</a>
+
+            <!-- Zaid Crops -->
+            <a href="/Crops/Zaid Crops/zaid-crops.html" class="button">Zaid Crops</a>
+        </div>
+
+        <h1>Kharif vs Rabi vs Zaid Crops</h1>
+
+        <div class="comparison-container">
+            <div class="crop kharif">   
+                <h2>1. Kharif Crops</h2>
+                <p>
+                    Kharif crops, also known as <strong>monsoon crops</strong>, are sown with the onset of the monsoon season (around June) and harvested at the end of the monsoon (around September or October). These crops require hot and humid conditions for growth and depend heavily on the southwest monsoon rains.
+                </p>
             
-            <article class="crop-item">
-                <a href="Iris.html">
-                    <img src="Iris.jpg" alt="Iris">
-                    <div class="crop-info">
-                        <h2>Iris</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Ixora.html">
-                    <img src="Ixora.jpeg" alt="Ixora">
-                    <div class="crop-info">
-                        <h2>Ixora</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Jacaranda.html">
-                    <img src="Jacaranda.jpeg" alt="Jacaranda">
-                    <div class="crop-info">
-                        <h2>Jacaranda</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Jasmine.html">
-                    <img src="Jasmine.jpeg" alt="Jasmine">
-                    <div class="crop-info">
-                        <h2>Jasmine</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Jatropha.html">
-                    <img src="Jatropha.jpg" alt="Jatropha">
-                    <div class="crop-info">
-                        <h2>Jatropha</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Kaffir Lily.html">
-                    <img src="Kaffir Lily.jpg" alt="Kaffir Lily">
-                    <div class="crop-info">
-                        <h2>Kaffir Lily</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Kalanchoe.html">
-                    <img src="Kalanchoe.jpg" alt="Kalanchoe">
-                    <div class="crop-info">
-                        <h2>Kalanchoe</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Kangaroo Paw.html">
-                    <img src="Kangaroo Paw.jpeg" alt="Kangaroo Paw">
-                    <div class="crop-info">
-                        <h2>Kangaroo Paw</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Lavender.html">
-                    <img src="Lavender.jpg" alt="Lavender">
-                    <div class="crop-info">
-                        <h2>Lavender</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Lily.html">
-                    <img src="Lily.jpg" alt="Lily">
-                    <div class="crop-info">
-                        <h2>Lily</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Lilac.html">
-                    <img src="Lilac.jpeg" alt="Lilac">
-                    <div class="crop-info">
-                        <h2>Lilac</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Lotus.html">
-                    <img src="Lotus.jpeg" alt="Lotus">
-                    <div class="crop-info">
-                        <h2>Lotus</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Magnolia.html">
-                    <img src="Magnolia.jpg" alt="Magnolia">
-                    <div class="crop-info">
-                        <h2>Magnolia</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Morning Glory.html">
-                    <img src="Morning Glory.jpeg" alt="Morning Glory">
-                    <div class="crop-info">
-                        <h2>Morning Glory</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Nasturtium.html">
-                    <img src="Nasturtium.jpeg" alt="Nasturtium">
-                    <div class="crop-info">
-                        <h2>Nasturtium</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Nerium.html">
-                    <img src="Nerium (Oleander).jpeg" alt="Nerium (Oleander)">
-                    <div class="crop-info">
-                        <h2>Nerium (Oleander)</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Nicotiana.html">
-                    <img src="Nicotiana.jpeg" alt="Nicotiana">
-                    <div class="crop-info">
-                        <h2>Nicotiana</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Oleander.html">
-                    <img src="Oleander.jpg" alt="Oleander">
-                    <div class="crop-info">
-                        <h2>Oleander</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Orchid.html">
-                    <img src="Orchid.jpg" alt="Orchid">
-                    <div class="crop-info">
-                        <h2>Orchid</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Oxalis.html">
-                    <img src="Oxalis.jpeg" alt="Oxalis">
-                    <div class="crop-info">
-                        <h2>Oxalis</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Periwinkle.html">
-                    <img src="Periwinkle.jpg" alt="Periwinkle">
-                    <div class="crop-info">
-                        <h2>Periwinkle</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Plumeria.html">
-                    <img src="Plumeria.jpeg" alt="Plumeria">
-                    <div class="crop-info">
-                        <h2>Plumeria</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Quisqualis.html">
-                    <img src="Quisqualis (Rangoon Creeper).jpg" alt="Quisqualis (Rangoon Creeper)">
-                    <div class="crop-info">
-                        <h2>Quisqualis (Rangoon Creeper)</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Ranunculus.html">
-                    <img src="Ranunculus.jpeg" alt="Ranunculus">
-                    <div class="crop-info">
-                        <h2>Ranunculus</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Rose.html">
-                    <img src="Rose.jpg" alt="Rose">
-                    <div class="crop-info">
-                        <h2>Rose</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Rudbeckia.html">
-                    <img src="Rudbeckia.jpg" alt="Rudbeckia">
-                    <div class="crop-info">
-                        <h2>Rudbeckia</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Salvia.html">
-                    <img src="Salvia.jpeg" alt="Salvia">
-                    <div class="crop-info">
-                        <h2>Salvia</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Snapdragon.html">
-                    <img src="Snapdragon.jpg" alt="Snapdragon">
-                    <div class="crop-info">
-                        <h2>Snapdragon</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Suncrop.html">
-                    <img src="Suncrop.jpeg" alt="Suncrop">
-                    <div class="crop-info">
-                        <h2>Suncrop</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Tiger Lily.html">
-                    <img src="Tiger Lily.jpg" alt="Tiger Lily">
-                    <div class="crop-info">
-                        <h2>Tiger Lily</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Tuberose.html">
-                    <img src="Tuberose.jpg" alt="Tuberose">
-                    <div class="crop-info">
-                        <h2>Tuberose</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Tulip.html">
-                    <img src="Tulip.jpeg" alt="Tulip">
-                    <div class="crop-info">
-                        <h2>Tulip</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Ursinia.html">
-                    <img src="Ursinia.jpg" alt="Ursinia">
-                    <div class="crop-info">
-                        <h2>Ursinia</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Uvaria.html">
-                    <img src="Uvaria.jpeg" alt="Uvaria">
-                    <div class="crop-info">
-                        <h2>Uvaria</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Verbena.html">
-                    <img src="Verbena.jpg" alt="Verbena">
-                    <div class="crop-info">
-                        <h2>Verbena</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Vinca.html">
-                    <img src="Vinca.jpg" alt="Vinca">
-                    <div class="crop-info">
-                        <h2>Vinca</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Water Lily.html">
-                    <img src="Water Lily.jpg" alt="Water Lily">
-                    <div class="crop-info">
-                        <h2>Water Lily</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Winter Jasmine.html">
-                    <img src="Winter Jasmine.jpg" alt="Winter Jasmine">
-                    <div class="crop-info">
-                        <h2>Winter Jasmine</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Wisteria.html">
-                    <img src="Wisteria.jpg" alt="Wisteria">
-                    <div class="crop-info">
-                        <h2>Wisteria</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Xanthoceras.html">
-                    <img src="Xanthoceras.jpg" alt="Xanthoceras">
-                    <div class="crop-info">
-                        <h2>Xanthoceras</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Xeranthemum.html">
-                    <img src="Xeranthemum.jpeg" alt="Xeranthemum">
-                    <div class="crop-info">
-                        <h2>Xeranthemum</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Yarrow.html">
-                    <img src="Yarrow.jpeg" alt="Yarrow">
-                    <div class="crop-info">
-                        <h2>Yarrow</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Yellow Bell.html">
-                    <img src="Yellow Bell.jpg" alt="Yellow Bell">
-                    <div class="crop-info">
-                        <h2>Yellow Bell</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Yellow Oleander.html">
-                    <img src="Yellow Oleander.jpeg" alt="Yellow Oleander">
-                    <div class="crop-info">
-                        <h2>Yellow Oleander</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Zephyranthes.html">
-                    <img src="Zephyranthes (Rain Lily).jpg" alt="Zephyranthes (Rain Lily)">
-                    <div class="crop-info">
-                        <h2>Zephyranthes (Rain Lily)</h2>
-                    </div>
-                </a>
-            </article>
-            <article class="crop-item">
-                <a href="Zinnia.html">
-                    <img src="Zinnia.jpeg" alt="Zinnia">
-                    <div class="crop-info">
-                        <h2>Zinnia</h2>
-                    </div>
-                </a>
-            </article>
-           
-        </section>
-    </main>
+                <h3>Key Features of Kharif Crops:</h3>
+                <ul>
+                    <li><strong>Sowing Time:</strong> June to July (with the arrival of the monsoon)</li>
+                    <li><strong>Harvesting Time:</strong> September to October</li>
+                    <li><strong>Water Requirement:</strong> High, as they rely on rainwater</li>
+                    <li><strong>Growing Conditions:</strong> Hot and wet conditions during the rainy season</li>
+                </ul>
+            
+                <h3>Examples of Kharif Crops:</h3>
+                <ul>
+                    <li>Rice (Paddy)</li>
+                    <li>Maize (Corn)</li>
+                    <li>Sorghum (Jowar)</li>
+                    <li>Millets (Bajra)</li>
+                    <li>Cotton</li>
+                    <li>Soybean</li>
+                    <li>Groundnut</li>
+                    <li>Pulses (Urad, Moong, Arhar)</li>
+                </ul>
+            
+                <h3>Advantages:</h3>
+                <ul>
+                    <li>They take advantage of the monsoon rains and can be grown in rain-fed areas.</li>
+                    <li>Kharif crops contribute significantly to food security, especially rice in India.</li>
+                </ul>
+            
+                <h3>Challenges:</h3>
+                <ul>
+                    <li>Excessive or deficient rainfall can impact crop yields.</li>
+                    <li>Vulnerable to flooding and pest attacks during the rainy season.</li>
+                </ul>
+            
+            </div>
 
+            <div class="crop rabi">
+                <h2>2. Rabi Crops</h2>
+                <p>
+                    Rabi crops are <strong>winter crops</strong>, sown after the monsoon (October to November) and harvested in the spring (March to April). These crops need a cool climate for germination and growth but require warmth for maturation.
+                </p>
+            
+                <h3>Key Features of Rabi Crops:</h3>
+                <ul>
+                    <li><strong>Sowing Time:</strong> October to November (post-monsoon)</li>
+                    <li><strong>Harvesting Time:</strong> March to April</li>
+                    <li><strong>Water Requirement:</strong> Relatively low; dependent on irrigation</li>
+                    <li><strong>Growing Conditions:</strong> Cool and dry weather during growth, warmth for harvesting</li>
+                </ul>
+            
+                <h3>Examples of Rabi Crops:</h3>
+                <ul>
+                    <li>Wheat</li>
+                    <li>Barley</li>
+                    <li>Mustard</li>
+                    <li>Peas</li>
+                    <li>Gram (Chickpea)</li>
+                    <li>Linseed</li>
+                    <li>Oats</li>
+                </ul>
+            
+                <h3>Advantages:</h3>
+                <ul>
+                    <li>The winter season has fewer pests and diseases.</li>
+                    <li>Dependable production due to irrigation and more stable climatic conditions.</li>
+                </ul>
+            
+                <h3>Challenges:</h3>
+                <ul>
+                    <li>Irrigation is necessary as these crops depend on residual moisture or artificial watering.</li>
+                </ul>
+            
+            </div>
+
+            <div class="crop zaid">
+                <h2>3. Zaid Crops</h2>
+    <p>
+        Zaid crops are <strong>short-season summer crops</strong> grown between the Kharif and Rabi seasons, specifically between March and June. They are cultivated during the hot, dry summer months and depend largely on irrigation.
+    </p>
+
+    <h3>Key Features of Zaid Crops:</h3>
+    <ul>
+        <li><strong>Sowing Time:</strong> March to April (between Rabi and Kharif)</li>
+        <li><strong>Harvesting Time:</strong> June to July (before Kharif season)</li>
+        <li><strong>Water Requirement:</strong> High, mostly grown under irrigation</li>
+        <li><strong>Growing Conditions:</strong> Hot and dry weather</li>
+    </ul>
+
+    <h3>Examples of Zaid Crops:</h3>
+    <ul>
+        <li>Watermelon</li>
+        <li>Muskmelon</li>
+        <li>Cucumber</li>
+        <li>Bitter Gourd (Karela)</li>
+        <li>Pumpkin</li>
+        <li>Summer Moong (Green Gram)</li>
+    </ul>
+
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Maximizes land use by filling the gap between Kharif and Rabi seasons.</li>
+        <li>Provides additional income and food during the lean period.</li>
+    </ul>
+
+    <h3>Challenges:</h3>
+    <ul>
+        <li>Irrigation-dependent, which increases production costs.</li>
+        <li>High temperatures can sometimes affect crop growth.</li>
+    </ul>               
+            </div>
+        </div>
+        <h2>Comparison of Kharif, Rabi, and Zaid Crops</h2>
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Crop Type</th>
+                    <th>Sowing Time</th>
+                    <th>Harvest Time</th>
+                    <th>Climate Requirement</th>
+                    <th>Major Crops</th>
+                    <th>Water Requirement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Kharif</strong></td>
+                    <td>June - July</td>
+                    <td>Sept - Oct</td>
+                    <td>Hot and humid</td>
+                    <td>Rice, Maize, Cotton, Soybean</td>
+                    <td>High (rain-fed)</td>
+                </tr>
+                <tr>
+                    <td><strong>Rabi</strong></td>
+                    <td>Oct - Nov</td>
+                    <td>March - April</td>
+                    <td>Cool (growth), Warm (harvest)</td>
+                    <td>Wheat, Barley, Mustard, Peas</td>
+                    <td>Moderate (irrigation-based)</td>
+                </tr>
+                <tr>
+                    <td><strong>Zaid</strong></td>
+                    <td>March - April</td>
+                    <td>June - July</td>
+                    <td>Hot and dry</td>
+                    <td>Watermelon, Muskmelon, Cucumber</td>
+                    <td>High (irrigation)</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
     <footer>
         <p>&copy; 2024 Agro Tech. All rights reserved.</p>
     </footer>
-    <script src="/script/crop.js"></script>
 </body>
 
 </html>

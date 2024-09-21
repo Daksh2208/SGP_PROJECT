@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kharif Crop - Agro Tech</title>
+    <link rel="stylesheet" href="kharif-crops.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/home page/logo.jpeg" alt="Agro Tech">
+            </div>
+            <div class="header-right">
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search here" oninput="showSuggestions(this.value)">
+                    <button onclick="searchCrops()">Search</button>
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="Kharif-Crop">
+            <h1>Kharif crop List</h1>
+            <p>Explore various Kharif Crops</p>
+        </section>
+
+        <section class="Kharif-Crop-gallery">
+            <article class="Kharif-Crop-item">
+                <a href="Arhar.html">
+                    <img src="Arhar (Pigeon Pea).jpg" alt="Arhar">
+                    <div class="Kharif-Crop-info">
+                        <h2>Arhar</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Amaranth.html">
+                    <img src="Amaranth.jpg" alt="Azomite">
+                    <div class="Kharif-Crop-info">
+                        <h2>Amaranth</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Bajra.html">
+                    <img src="Bajra (Pearl Millet).jpg" alt="Bajra">
+                    <div class="Kharif-Crop-info">
+                        <h2>Bajra (Pearl Millet)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Black Gram.html">
+                    <img src="Banana Peels.jpg" alt="Black Gram">
+                    <div class="Kharif-Crop-info">
+                        <h2>Black Gram</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Brinjal.html">
+                    <img src="Brinjal.jpg" alt="Brinjal">
+                    <div class="Kharif-Crop-info">
+                        <h2>Brinjal</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Castor.html">
+                    <img src="Castor.jpg" alt="Castor">
+                    <div class="Kharif-Crop-info">
+                        <h2>Castor</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Cotton.html">
+                    <img src="Cotton.jpg" alt="Cotton">
+                    <div class="Kharif-Crop-info">
+                        <h2>Cotton</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Cluster Beans.html">
+                    <img src="Bokashi Bran.jpg" alt="Cluster Beans">
+                    <div class="Kharif-Crop-info">
+                        <h2>Cluster Beans (Guar)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Chilli.html">
+                    <img src="Chilli.jpg" alt="Chilli">
+                    <div class="Kharif-Crop-info">
+                        <h2>Chilli</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Chicken Manure.html">
+                    <img src="Chicken Manure.jpg" alt="Chicken Manure">
+                    <div class="Kharif-Crop-info">
+                        <h2>Chicken Manure</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Drumstick.html">
+                    <img src="Drumstick (Moringa).jpg" alt="Drumstick">
+                    <div class="Kharif-Crop-info">
+                        <h2>Drumstick (Moringa)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Elephant Foot Yam.html">
+                    <img src="Elephant Foot Yam.jpg" alt="Elephant Foot Yam">
+                    <div class="Kharif-Crop-info">
+                        <h2>Elephant Foot Yam</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Foxtail Millet.html">
+                    <img src="Compost.jpg" alt="Foxtail Millet">
+                    <div class="Kharif-Crop-info">
+                        <h2>Foxtail Millet</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Groundnut.html">
+                    <img src="Groundnut.jpg" alt="Groundnut">
+                    <div class="Kharif-Crop-info">
+                        <h2>Groundnut</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Green Gram.html">
+                    <img src="Green Gram (Moong).jpg" alt="Green Gram">
+                    <div class="Kharif-Crop-info">
+                        <h2>Green Gram (Moong)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Horse Gram.html">
+                    <img src="Horse Gram.jpg" alt="Horse Gram">
+                    <div class="Kharif-Crop-info">
+                        <h2>Horse Gram</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Indian Spinach.html">
+                    <img src="Indian Spinach.jpg" alt="Indian Spinach">
+                    <div class="Kharif-Crop-info">
+                        <h2>Indian Spinach</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Jowar.html">
+                    <img src="Jowar (Sorghum).jpg" alt="Jowar">
+                    <div class="Kharif-Crop-info">
+                        <h2>Jowar (Sorghum)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Kharif Maize.html">
+                    <img src="Kharif Maize.jpg" alt="Kharif Maize">
+                    <div class="Kharif-Crop-info">
+                        <h2>Kharif Maize</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Kulthi.html">
+                    <img src="Kulthi.jpg" alt="Kulthi">
+                    <div class="Kharif-Crop-info">
+                        <h2>Kulthi</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Ladyfinger.html">
+                    <img src="Fish Hydrolysate.jpg" alt="Ladyfinger">
+                    <div class="Kharif-Crop-info">
+                        <h2>Ladyfinger (Okra)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Maize.html">
+                    <img src="Maize.jpg" alt="Maize">
+                    <div class="Kharif-Crop-info">
+                        <h2>Maize</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Moth Beans.html">
+                    <img src="Moth Beans.jpg" alt="Moth Beans">
+                    <div class="Kharif-Crop-info">
+                        <h2>Moth Beans</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Niger.html">
+                    <img src="Niger.jpg" alt="Niger">
+                    <div class="Kharif-Crop-info">
+                        <h2>Niger</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Onion.html">
+                    <img src="Green Sand.jpg" alt="Onion">
+                    <div class="Kharif-Crop-info">
+                        <h2>Onion</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Paddy.html">
+                    <img src="Paddy (Rice).jpg" alt="Paddy">
+                    <div class="Kharif-Crop-info">
+                        <h2>Paddy (Rice)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Pearl Millet.html">
+                    <img src="Pearl Millet.jpg" alt="Pearl Millet">
+                    <div class="Kharif-Crop-info">
+                        <h2>Pearl Millet</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Pigeon Pea.html">
+                    <img src="Pigeon Pea.jpg" alt="Pigeon Pea">
+                    <div class="Kharif-Crop-info">
+                        <h2>Pigeon Pea</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Quinoa.html">
+                    <img src="Quinoa.jpg" alt="Quinoa">
+                    <div class="Kharif-Crop-info">
+                        <h2>Quinoa</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Ragi.html">
+                    <img src="Ragi (Finger Millet).jpg" alt="Ragi">
+                    <div class="Kharif-Crop-info">
+                        <h2>Ragi (Finger Millet)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Roselle.html">
+                    <img src="Roselle.jpg" alt="Roselle">
+                    <div class="Kharif-Crop-info">
+                        <h2>Roselle</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Soybean.html">
+                    <img src="Soybean.jpg" alt="Soybean">
+                    <div class="Kharif-Crop-info">
+                        <h2>Soybean</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Sesamum.html">
+                    <img src="Sesamum (Til).jpg" alt="Sesamum">
+                    <div class="Kharif-Crop-info">
+                        <h2>Sesamum (Til)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Sugarcane.html">
+                    <img src="Sugarcane.jpg" alt="Sugarcane">
+                    <div class="Kharif-Crop-info">
+                        <h2>Sugarcane</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Turmeric.html">
+                    <img src="Turmeric.jpg" alt="Turmeric">
+                    <div class="Kharif-Crop-info">
+                        <h2>Turmeric</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Urad.html">
+                    <img src="Urad (Black Gram).jpg" alt="Urad (Black Gram)">
+                    <div class="Kharif-Crop-info">
+                        <h2>Urad (Black Gram)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Velvet Bean.html">
+                    <img src="Velvet Bean.jpg" alt="Velvet Bean">
+                    <div class="Kharif-Crop-info">
+                        <h2>Velvet Bean</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Watermelon.html">
+                    <img src="Watermelon.jpg" alt="Watermelon">
+                    <div class="Kharif-Crop-info">
+                        <h2>Watermelon</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Yam.html">
+                    <img src="Yam.jpg" alt="Yam">
+                    <div class="Kharif-Crop-info">
+                        <h2>Yam</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Kharif-Crop-item">
+                <a href="Zucchini.html">
+                    <img src="Zucchini.jpg" alt="Zucchini">
+                    <div class="Kharif-Crop-info">
+                        <h2>Zucchini</h2>
+                    </div>
+                </a>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Agro Tech. All rights reserved.</p>
+    </footer>
+    <script src="/script/Kharif_Crop.js"></script>
+</body>
+</html>
