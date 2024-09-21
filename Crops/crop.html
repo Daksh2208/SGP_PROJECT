@@ -4,145 +4,631 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rose Flower Farming Guide</title>
-    <link rel="stylesheet" href="rose.css"> <!-- Link to your CSS file -->
+    <title>Crops - Agro Tech</title>
+    <link rel="stylesheet" href="crop.css">
 </head>
 
 <body>
     <header>
-        <h1>Rose Flower Farming Guide</h1>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/home page/logo.jpeg" alt="Agro Tech">
+            </div>
+            <div class="header-right">
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for crops" oninput="showSuggestions(this.value)">
+                    <button onclick="searchCrops()">Search</button>
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+
+        </div>
+        </div>
     </header>
 
+
     <main>
-        <section id="growing-conditions">
-            <h2>Optimal Growing Conditions for Roses</h2>
-            <article id="climate">
-                <h3>Climate</h3>
-                <ul>
-                    <li><strong>Temperature:</strong> Ideal temperatures range between 15°C to 28°C (59°F to 82°F). Extreme temperatures can inhibit growth.</li>
-                    <li><strong>Light:</strong> Roses require full sunlight for at least 6-8 hours a day.</li>
-                </ul>
-            </article>
-            <article id="season">
-                <h3>Season</h3>
-                <ul>
-                    <li><strong>Planting Season:</strong> The best time to plant roses is during the dormant season, typically in late winter to early spring, depending on your climate zone.</li>
-                    <li><strong>Flowering Season:</strong> Most rose varieties bloom from late spring to fall, with peak blooming in early summer.</li>
-                </ul>
-            </article>
-            <article id="soil">
-                <h3>Soil</h3>
-                <ul>
-                    <li><strong>Type:</strong> Well-drained loamy soil is ideal for rose cultivation. Soil should be rich in organic matter.</li>
-                    <li><strong>pH Level:</strong> Slightly acidic to neutral soil, with a pH range of 6.0 to 7.0, is optimal for roses.</li>
-                </ul>
-            </article>
+        <section class="crop-intro">
+            <h1>Crops List</h1>
+            <p>Explore various Crops and their cultivation techniques.</p>
         </section>
 
-        <section id="fertilization">
-            <h2>Fertilization</h2>
-            <article id="types">
-                <h3>Types of Fertilizers</h3>
-                <ul>
-                    <li><strong>Organic Fertilizers:</strong> Well-rotted manure, compost, and fish emulsion.</li>
-                    <li><strong>Inorganic Fertilizers:</strong> Balanced NPK (Nitrogen-Phosphorus-Potassium) fertilizers. A typical NPK ratio for roses is 10-10-10 or 12-12-12.</li>
-                </ul>
+        <section class="crop-gallery">
+            <article class="crop-item">
+                <a href="Azalea.html">
+                    <img src="Azalea.jpeg" alt="Azalea">
+                    <div class="crop-info">
+                        <h2>Azalea</h2>
+                    </div>
+                </a>
             </article>
-            <article id="schedule">
-                <h3>Fertilization Schedule</h3>
-                <ul>
-                    <li><strong>Early Spring:</strong> Apply a balanced fertilizer to encourage new growth.</li>
-                    <li><strong>Early Summer:</strong> Use a high-phosphorus fertilizer to promote blooming.</li>
-                    <li><strong>Mid to Late Summer:</strong> Apply a balanced fertilizer again to maintain health and encourage a second bloom cycle.</li>
-                    <li><strong>Fall:</strong> Stop fertilizing 6-8 weeks before the first frost to prepare the plants for dormancy.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Amaryllis.html">
+                    <img src="Amaryllis.jpeg" alt="Amaryllis">
+                    <div class="crop-info">
+                        <h2>Amaryllis</h2>
+                    </div>
+                </a>
             </article>
-        </section>
-
-        <section id="planting-care">
-            <h2>Planting and Care</h2>
-            <article id="planting">
-                <h3>Planting</h3>
-                <ul>
-                    <li><strong>Bare-Root Roses:</strong> Soak roots in water for several hours before planting. Dig a hole wide enough to spread out the roots and deep enough to cover the graft union.</li>
-                    <li><strong>Potted Roses:</strong> Water the plant thoroughly before planting. Dig a hole twice as wide as the root ball and of the same depth.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Anthurium.html">
+                    <img src="Anthurium.jpeg" alt="Anthurium">
+                    <div class="crop-info">
+                        <h2>Anthurium</h2>
+                    </div>
+                </a>
             </article>
-            <article id="watering">
-                <h3>Watering</h3>
-                <ul>
-                    <li><strong>Frequency:</strong> Water deeply and regularly, providing at least 1-2 inches of water per week. Adjust based on rainfall and climate.</li>
-                    <li><strong>Method:</strong> Use drip irrigation or a soaker hose to avoid wetting the foliage, which can lead to fungal diseases.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Aster.html">
+                    <img src="Aster.jpeg" alt="Aster">
+                    <div class="crop-info">
+                        <h2>Aster</h2>
+                    </div>
+                </a>
             </article>
-        </section>
-
-        <section id="diseases-pests">
-            <h2>Common Diseases and Pests</h2>
-            <article id="black-spot">
-                <h3>Black Spot</h3>
-                <ul>
-                    <li><strong>Symptoms:</strong> Black spots on leaves, leading to yellowing and leaf drop.</li>
-                    <li><strong>Prevention:</strong> Ensure good air circulation, avoid overhead watering, and apply fungicides as needed.</li>
-                    <li><strong>Treatment:</strong> Remove and destroy affected leaves. Apply fungicides containing chlorothalonil or mancozeb.</li>
-                </ul>
             </article>
-            <article id="powdery-mildew">
-                <h3>Powdery Mildew</h3>
-                <ul>
-                    <li><strong>Symptoms:</strong> White powdery substance on leaves, stems, and buds.</li>
-                    <li><strong>Prevention:</strong> Provide good air circulation and avoid overcrowding plants.</li>
-                    <li><strong>Treatment:</strong> Use fungicides like sulfur or neem oil. Remove and destroy infected plant parts.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Balsam.html">
+                    <img src="Balsam.jpg" alt="Balsam">
+                    <div class="crop-info">
+                        <h2>Balsam</h2>
+                    </div>
+                </a>
             </article>
-            <article id="rust">
-                <h3>Rust</h3>
-                <ul>
-                    <li><strong>Symptoms:</strong> Orange or rust-colored spots on the underside of leaves.</li>
-                    <li><strong>Prevention:</strong> Ensure proper spacing and air circulation. Remove debris from around the plants.</li>
-                    <li><strong>Treatment:</strong> Apply fungicides containing myclobutanil or triforine.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Bluebell.html">
+                    <img src="Bluebell.jpeg" alt="Bluebell">
+                    <div class="crop-info">
+                        <h2>Bluebell</h2>
+                    </div>
+                </a>
             </article>
-            <article id="aphids">
-                <h3>Aphids</h3>
-                <ul>
-                    <li><strong>Symptoms:</strong> Small green, red, or black insects on new growth, causing distorted leaves and buds.</li>
-                    <li><strong>Prevention:</strong> Encourage natural predators like ladybugs.</li>
-                    <li><strong>Treatment:</strong> Use insecticidal soap or neem oil. Hose off aphids with a strong jet of water.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Bougainvillea.html">
+                    <img src="Bougainvillea.jpeg" alt="Bougainvillea">
+                    <div class="crop-info">
+                        <h2>Bougainvillea</h2>
+                    </div>
+                </a>
             </article>
-            <article id="spider-mites">
-                <h3>Spider Mites</h3>
-                <ul>
-                    <li><strong>Symptoms:</strong> Tiny, spider-like insects causing stippling and bronzing of leaves.</li>
-                    <li><strong>Prevention:</strong> Keep plants well-watered and maintain high humidity.</li>
-                    <li><strong>Treatment:</strong> Use miticides or insecticidal soap. Regularly spray plants with water to dislodge mites.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Canna Lily.html">
+                    <img src="Canna Lily.jpeg" alt="Canna Lily">
+                    <div class="crop-info">
+                        <h2>Canna Lily</h2>
+                    </div>
+                </a>
             </article>
-        </section>
-
-        <section id="harvesting-care">
-            <h2>Harvesting and Post-Harvest Care</h2>
-            <article id="harvesting">
-                <h3>Harvesting</h3>
-                <ul>
-                    <li><strong>Timing:</strong> Harvest roses in the early morning when the flowers are just beginning to open.</li>
-                    <li><strong>Method:</strong> Use sharp, clean shears to cut the stems at a 45-degree angle.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Carnation.html">
+                    <img src="Carnation.jpg" alt="Carnation">
+                    <div class="crop-info">
+                        <h2>Carnation</h2>
+                    </div>
+                </a>
             </article>
-            <article id="post-harvest-care">
-                <h3>Post-Harvest Care</h3>
-                <ul>
-                    <li><strong>Conditioning:</strong> Place cut stems immediately in water. Re-cut the stems under water to prevent air embolism.</li>
-                    <li><strong>Storage:</strong> Store roses in a cool, dark place. Use floral preservatives to extend vase life.</li>
-                </ul>
+            <article class="crop-item">
+                <a href="Chrysanthemum.html">
+                    <img src="Chrysanthemum.jpeg" alt="Chrysanthemum">
+                    <div class="crop-info">
+                        <h2>Chrysanthemum</h2>
+                    </div>
+                </a>
             </article>
+            <article class="crop-item">
+                <a href="Daffodil.html">
+                    <img src="Daffodil.jpg" alt="Daffodil">
+                    <div class="crop-info">
+                        <h2>Daffodil</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Dahlia.html">
+                    <img src="Dahlia.jpeg" alt="Dahlia">
+                    <div class="crop-info">
+                        <h2>Dahlia</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Daisy.html">
+                    <img src="Daisy.jpg" alt="Daisy">
+                    <div class="crop-info">
+                        <h2>Daisy</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Erythrina.html">
+                    <img src="Erythrina.jpg" alt="Erythrina">
+                    <div class="crop-info">
+                        <h2>Erythrina</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Eustoma.html">
+                    <img src="Eustoma.jpg" alt="Eustoma">
+                    <div class="crop-info">
+                        <h2>Eustoma</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Evening Primrose.html">
+                    <img src="Evening Primrose.jpg" alt="Evening Primrose">
+                    <div class="crop-info">
+                        <h2>Evening Primrose</h2>
+                    </div>
+                </a>
+            </article>
+            </article>
+            <article class="crop-item">
+                <a href="Flax crop.html">
+                    <img src="Flax crop.jpg" alt="Flax crop">
+                    <div class="crop-info">
+                        <h2>Flax crop</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Forget-Me-Not.html">
+                    <img src="Forget-Me-Not.jpg" alt="Forget-Me-Not">
+                    <div class="crop-info">
+                        <h2>Forget-Me-Not</h2>
+                    </div>
+                </a>
+            </article>
+          
+            </article>
+            <article class="crop-item">
+                <a href="Frangipani.html">
+                    <img src="Frangipani.jpeg" alt="Frangipani">
+                    <div class="crop-info">
+                        <h2>Frangipani</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Gardenia.html">
+                    <img src="Gardenia.jpg" alt="Gardenia">
+                    <div class="crop-info">
+                        <h2>Gardenia</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Gerbera.html">
+                    <img src="Gerbera.jpg" alt="Gerbera">
+                    <div class="crop-info">
+                        <h2>Gerbera</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Gladiolus.html">
+                    <img src="Gladiolus.jpeg" alt="Gladiolus">
+                    <div class="crop-info">
+                        <h2>Gladiolus</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Hibiscus.html">
+                    <img src="Hibiscus.jpeg" alt="Hibiscus">
+                    <div class="crop-info">
+                        <h2>Hibiscus</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Hollyhock.html">
+                    <img src="Hollyhock.jpeg" alt="Hollyhock">
+                    <div class="crop-info">
+                        <h2>Hollyhock</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Hydrangea.html">
+                    <img src="Hydrangea.jpeg" alt="Hydrangea">
+                    <div class="crop-info">
+                        <h2>Hydrangea</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Indian Blanket crop.html">
+                    <img src="Indian Blanket crop (Gaillardia).jpg" alt="Indian Blanket crop (Gaillardia)">
+                    <div class="crop-info">
+                        <h2>Indian Blanket crop (Gaillardia)</h2>
+                    </div>
+                </a>
+            </article>
+            
+            <article class="crop-item">
+                <a href="Iris.html">
+                    <img src="Iris.jpg" alt="Iris">
+                    <div class="crop-info">
+                        <h2>Iris</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Ixora.html">
+                    <img src="Ixora.jpeg" alt="Ixora">
+                    <div class="crop-info">
+                        <h2>Ixora</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Jacaranda.html">
+                    <img src="Jacaranda.jpeg" alt="Jacaranda">
+                    <div class="crop-info">
+                        <h2>Jacaranda</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Jasmine.html">
+                    <img src="Jasmine.jpeg" alt="Jasmine">
+                    <div class="crop-info">
+                        <h2>Jasmine</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Jatropha.html">
+                    <img src="Jatropha.jpg" alt="Jatropha">
+                    <div class="crop-info">
+                        <h2>Jatropha</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Kaffir Lily.html">
+                    <img src="Kaffir Lily.jpg" alt="Kaffir Lily">
+                    <div class="crop-info">
+                        <h2>Kaffir Lily</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Kalanchoe.html">
+                    <img src="Kalanchoe.jpg" alt="Kalanchoe">
+                    <div class="crop-info">
+                        <h2>Kalanchoe</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Kangaroo Paw.html">
+                    <img src="Kangaroo Paw.jpeg" alt="Kangaroo Paw">
+                    <div class="crop-info">
+                        <h2>Kangaroo Paw</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Lavender.html">
+                    <img src="Lavender.jpg" alt="Lavender">
+                    <div class="crop-info">
+                        <h2>Lavender</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Lily.html">
+                    <img src="Lily.jpg" alt="Lily">
+                    <div class="crop-info">
+                        <h2>Lily</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Lilac.html">
+                    <img src="Lilac.jpeg" alt="Lilac">
+                    <div class="crop-info">
+                        <h2>Lilac</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Lotus.html">
+                    <img src="Lotus.jpeg" alt="Lotus">
+                    <div class="crop-info">
+                        <h2>Lotus</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Magnolia.html">
+                    <img src="Magnolia.jpg" alt="Magnolia">
+                    <div class="crop-info">
+                        <h2>Magnolia</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Morning Glory.html">
+                    <img src="Morning Glory.jpeg" alt="Morning Glory">
+                    <div class="crop-info">
+                        <h2>Morning Glory</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Nasturtium.html">
+                    <img src="Nasturtium.jpeg" alt="Nasturtium">
+                    <div class="crop-info">
+                        <h2>Nasturtium</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Nerium.html">
+                    <img src="Nerium (Oleander).jpeg" alt="Nerium (Oleander)">
+                    <div class="crop-info">
+                        <h2>Nerium (Oleander)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Nicotiana.html">
+                    <img src="Nicotiana.jpeg" alt="Nicotiana">
+                    <div class="crop-info">
+                        <h2>Nicotiana</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Oleander.html">
+                    <img src="Oleander.jpg" alt="Oleander">
+                    <div class="crop-info">
+                        <h2>Oleander</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Orchid.html">
+                    <img src="Orchid.jpg" alt="Orchid">
+                    <div class="crop-info">
+                        <h2>Orchid</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Oxalis.html">
+                    <img src="Oxalis.jpeg" alt="Oxalis">
+                    <div class="crop-info">
+                        <h2>Oxalis</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Periwinkle.html">
+                    <img src="Periwinkle.jpg" alt="Periwinkle">
+                    <div class="crop-info">
+                        <h2>Periwinkle</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Plumeria.html">
+                    <img src="Plumeria.jpeg" alt="Plumeria">
+                    <div class="crop-info">
+                        <h2>Plumeria</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Quisqualis.html">
+                    <img src="Quisqualis (Rangoon Creeper).jpg" alt="Quisqualis (Rangoon Creeper)">
+                    <div class="crop-info">
+                        <h2>Quisqualis (Rangoon Creeper)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Ranunculus.html">
+                    <img src="Ranunculus.jpeg" alt="Ranunculus">
+                    <div class="crop-info">
+                        <h2>Ranunculus</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Rose.html">
+                    <img src="Rose.jpg" alt="Rose">
+                    <div class="crop-info">
+                        <h2>Rose</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Rudbeckia.html">
+                    <img src="Rudbeckia.jpg" alt="Rudbeckia">
+                    <div class="crop-info">
+                        <h2>Rudbeckia</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Salvia.html">
+                    <img src="Salvia.jpeg" alt="Salvia">
+                    <div class="crop-info">
+                        <h2>Salvia</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Snapdragon.html">
+                    <img src="Snapdragon.jpg" alt="Snapdragon">
+                    <div class="crop-info">
+                        <h2>Snapdragon</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Suncrop.html">
+                    <img src="Suncrop.jpeg" alt="Suncrop">
+                    <div class="crop-info">
+                        <h2>Suncrop</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Tiger Lily.html">
+                    <img src="Tiger Lily.jpg" alt="Tiger Lily">
+                    <div class="crop-info">
+                        <h2>Tiger Lily</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Tuberose.html">
+                    <img src="Tuberose.jpg" alt="Tuberose">
+                    <div class="crop-info">
+                        <h2>Tuberose</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Tulip.html">
+                    <img src="Tulip.jpeg" alt="Tulip">
+                    <div class="crop-info">
+                        <h2>Tulip</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Ursinia.html">
+                    <img src="Ursinia.jpg" alt="Ursinia">
+                    <div class="crop-info">
+                        <h2>Ursinia</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Uvaria.html">
+                    <img src="Uvaria.jpeg" alt="Uvaria">
+                    <div class="crop-info">
+                        <h2>Uvaria</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Verbena.html">
+                    <img src="Verbena.jpg" alt="Verbena">
+                    <div class="crop-info">
+                        <h2>Verbena</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Vinca.html">
+                    <img src="Vinca.jpg" alt="Vinca">
+                    <div class="crop-info">
+                        <h2>Vinca</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Water Lily.html">
+                    <img src="Water Lily.jpg" alt="Water Lily">
+                    <div class="crop-info">
+                        <h2>Water Lily</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Winter Jasmine.html">
+                    <img src="Winter Jasmine.jpg" alt="Winter Jasmine">
+                    <div class="crop-info">
+                        <h2>Winter Jasmine</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Wisteria.html">
+                    <img src="Wisteria.jpg" alt="Wisteria">
+                    <div class="crop-info">
+                        <h2>Wisteria</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Xanthoceras.html">
+                    <img src="Xanthoceras.jpg" alt="Xanthoceras">
+                    <div class="crop-info">
+                        <h2>Xanthoceras</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Xeranthemum.html">
+                    <img src="Xeranthemum.jpeg" alt="Xeranthemum">
+                    <div class="crop-info">
+                        <h2>Xeranthemum</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Yarrow.html">
+                    <img src="Yarrow.jpeg" alt="Yarrow">
+                    <div class="crop-info">
+                        <h2>Yarrow</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Yellow Bell.html">
+                    <img src="Yellow Bell.jpg" alt="Yellow Bell">
+                    <div class="crop-info">
+                        <h2>Yellow Bell</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Yellow Oleander.html">
+                    <img src="Yellow Oleander.jpeg" alt="Yellow Oleander">
+                    <div class="crop-info">
+                        <h2>Yellow Oleander</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Zephyranthes.html">
+                    <img src="Zephyranthes (Rain Lily).jpg" alt="Zephyranthes (Rain Lily)">
+                    <div class="crop-info">
+                        <h2>Zephyranthes (Rain Lily)</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="crop-item">
+                <a href="Zinnia.html">
+                    <img src="Zinnia.jpeg" alt="Zinnia">
+                    <div class="crop-info">
+                        <h2>Zinnia</h2>
+                    </div>
+                </a>
+            </article>
+           
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Rose Flower Farming Guide. All rights reserved.</p>
+        <p>&copy; 2024 Agro Tech. All rights reserved.</p>
     </footer>
+    <script src="/script/crop.js"></script>
 </body>
 
 </html>
