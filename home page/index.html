@@ -16,26 +16,11 @@
             </div>
             <div class="searchbar-container">
                 <div class="searchbar">
-                    <select class="search-dropdown">
-                        <option>All</option>
-                        <option value="technologies">Technologies</option>
-                        <option value="vegetables">Vegetables</option>
-                        <option value="fruits">Fruits</option>
-                        <option value="flowers">Flowers</option>
-                        <option value="seeds">Seeds</option>
-                        <option value="fertilizer">Fertilizer</option>
-                        <option value="market-trend">Market Trend</option>
-                        <option value="statistics">Statistics</option>
-                        <option value="programs-schemes">Programs & Schemes</option>
-                        <!-- Add more options if needed -->
-                    </select>
-                    <input type="text" placeholder="Search here" class="search-input">
+                    <input type="text" placeholder="Search here" id="search-input" class="search-input">
                     <div class="search-icon">
                         <img src="bino.png" alt="Search">
                     </div>
-
                 </div>
-                
             </div>
         </div>
     </header>
@@ -52,7 +37,6 @@
                 <li><a href="market-trend.html" target="_blank">Market Trend</a></li>
                 <li><a href="Statistic.html" target="_blank">Statistic</a></li>
                 <li><a href="Programs&Schemes.html" target="_blank">Programs & Schemes</a></li>
-                <!-- Add more menu items as needed -->
             </ul>
         </nav>
     </div>
@@ -77,7 +61,6 @@
         </a>
         <a href="/Technology/machine.html" class="machine-link">
             <img src="/Technology/machine-1.jpg" alt="Machine" class="machine-image">
-
             <div class="image-description">
                 <p>Innovative Machine Technology for Efficient Farming.</p>
             </div>
@@ -106,8 +89,6 @@
             </div>
         </a>
     </div>
-
-    <!-- Trees Section -->
     <div class="trees">
         <h3 class="tree-link"><a href="trees.html" target="_blank" style="text-decoration: none;">Fruits</a></h3>
     </div>
@@ -154,44 +135,224 @@
             </div>
         </a>
     </div>
-       <!-- More content like vegetables, fruits, flowers, etc. -->
-       <script>
+
+    <script>
         // Add event listener for search input
         document.getElementById('search-input').addEventListener('keypress', function (event) {
             if (event.key === "Enter") {
                 performSearch();
             }
         });
-        
+
         // Function to perform search and navigate to respective file
         function performSearch() {
             let input = document.getElementById('search-input').value.toLowerCase().trim();
             let baseUrl = window.location.origin;  // Get the base URL for redirection
-        
+
             // Search map for input to file mapping
             const searchMap = {
-                'technologies': '/Technology/Technologies.html',
+
+                // Technology
+                'technology': '/Technology/Technologies.html',
+
                 'drone': '/Technology/Agriculture-drone.html',
+                'ai': '/Technology/AI.html',
                 'robot': '/Technology/Smart_Robot.html',
                 'machine': '/Technology/machine.html',
-                'vegetables': '/vegetable/vegetable.html',
-                'fruits': '/fruit/fruit.html',
-                'tomatoes': '/vegetable/tomatoes.html',
+
+                // Vegetable
+                'vegetable': '/vegetable/vegetable.html',
+
+                'amaranth': '/vegetable/amaranth.html',
+                'arbi': '/vegetable/Arbi.html',
+                'artichoke': '/vegetable/Artichoke.html',
+                'ash gourd': '/vegetable/ash gourd.html',
+                'aubergine': '/vegetable/aubergine.html',
+                'bamboo shoots': '/vegetable/Bamboo shoots.html',
+                'bell pepper': '/vegetable/Bell pepper.html',
+                'bitroot': '/vegetable/Bitroot.html',
+                'bok choy': '/vegetable/Bok choy.html',
+                'bitter gourd': '/vegetable/Bitter Gourd.html',
+                'broad beans': '/vegetable/Broad beans.html',
+                'brocoli': '/vegetable/Brocoli.html',
+                'cabbage': '/vegetable/Cabbage.html',
+                'carrot': '/vegetable/Carrot.html',
                 'cauliflower': '/vegetable/Cauliflower.html',
+                'celery': '/vegetable/celery.html',
+                'chayote': '/vegetable/Chayote.html',
+                'cluster beans': '/vegetable/Cluster Beans.html',
+                'Colocasia leaves': '/vegetable/Colocasia leaves.html',
+                'cucumber': '/vegetable/Cucumber.html',
+                'drumstic': '/vegetable/Drumstic.html',
+                'elephant foot yam': '/vegetable/Elephant foot yam.html',
+                'endive': '/vegetable/endive.html',
+                'fava bens': '/vegetable/Fava bens.html',
+                'fennel bulb': '/vegetable/Fennel Bulb.html',
+                'fenugreek leaves': '/vegetable/Fenugreek Leaves.html',
+                'galangal': '/vegetable/Galangal.html',
+                'garlic': '/vegetable/Garlic.html',
+                'ginger': '/vegetable/Ginger.html',
+                'green beans': '/vegetable/Green beans.html',
+                'green chillies': '/vegetable/Green chillies.html',
+                'green peas': '/vegetable/Green peas.html',
+                'hyacinth beans': '/vegetable/Hyacinth Beans.html',
+                'ivy gourd': '/vegetable/Ivy Gourd.html',
+                'jackfruit': '/vegetable/Jackfruit.html',
+                'kale': '/vegetable/Kale.html',
+                'kohlrabi': '/vegetable/Kohlrabi.html',
                 'ladyfinger': '/vegetable/Ladyfinger.html',
-                'mango': '/TREES/Mango.html',
+                'leeks': '/vegetable/Leeks.html',
+                'lemongrass': '/vegetable/LemonGrass.html',
+                'lettuce': '/vegetable/Lettuce.html',
+                'mint': '/vegetable/Mint.html',
+                'mustard greens': '/vegetable/Mustard Greens.html',
+                'nettle leaves': '/vegetable/Nettle Leaves.html',
+                'potato': '/vegetable/Potatoes.html',
+                'pumpkin': '/vegetable/Pumpkin.html',
+                'quinoa leaves': '/vegetable/Quinoa Leaves.html',
+                'radish': '/vegetable/Radish.html',
+                'ridge gourd': '/vegetable/Ridge Gourd.html',
+                'Rocket Leaves': '/vegetable/Rocket Leaves.html',
+                'spinach': '/vegetable/Spinach.html',
+                'spring onion': '/vegetable/Spring Onion.html',
+                'sweet potato': '/vegetable/Sweet Potato.html',
+                'tomato': '/vegetable/tomatoes.html',
+                'turnip': '/vegetable/Turnip.html',
+                'yam': '/vegetable/Yam.html',
+                'yardlong beans': '/vegetable/Yardlong Beans.html',
+                'zucchini': '/vegetable/Zucchini.html',
+
+                // Fruit
+                'fruits': '/fruit/fruit.html',
+
+                'apple': '/fruit/Apple.html',
+                'apricot': '/fruit/Apricot.html',
+                'avocado': '/fruit/Avocado.html',
+                'bael': '/fruit/Bael.html',
+                'banana': '/fruit/Banana.html',
+                'ber': '/fruit/Ber.html',
+                'blackberry': '/fruit/Blackberry.html',
+                'blueberry': '/fruit/Blueberry.html',
+                'cantaloupe': '/fruit/Cantaloupe.html',
+                'carambola': '/fruit/Carambola.html',
+                'cashew apple': '/fruit/Cashew Apple.html',
+                'cranberry': '/fruit/Cranberry.html',
+                'chikoo': '/fruit/Chikoo.html',
+                'coconut': '/fruit/Coconut.html',
+                'custard apple': '/fruit/Custard Apple.html',
+                'dragon fruit': '/fruit/Dragon Fruit.html',
+                'durian fruit': '/fruit/Durian Fruit.html',
+                'fig': '/fruit/Fig.html',
+                'feijoa': '/fruit/Feijoa.html',
+                'gooseberry': '/fruit/Gooseberry.html',
+                'grapes': '/fruit/Grapes.html',
+                'guava': '/fruit/Guava.html',
+                'jamun': '/fruit/Jamun.html',
+                'kiwi': '/fruit/Kiwi.html',
+                'kokum': '/fruit/Kokum.html',
+                'lime': '/fruit/Lime.html',
+                'lychee': '/fruit/Lychee.html',
+                'mango': '/fruit/Mango.html',
+                'mulberry': '/fruit/Mulberry.html',
+                'muskmelon': '/fruit/Muskmelon.html',
+                'nance': '/fruit/Nance.html',
+                'orange': '/fruit/Orange.html',
+                'papaya': '/fruit/Papaya.html',
+                'passion fruit': '/fruit/Passion Fruit.html',
+                'peach': '/fruit/Peach.html',
+                'pear': '/fruit/Pear.html',
+                'pineapple': '/fruit/Pineapple.html',
+                'plum': '/fruit/Plum.html',
+                'pomegranate': '/fruit/Pomegranate.html',
+                'rambutan': '/fruit/Rambutan.html',
+                'raspberry': '/fruit/Raspberry.html',
+                'strawberry': '/fruit/Strawberry.html',
+                'sweet lime': '/fruit/Sweet Lime.html',
+                'tamarind': '/fruit/Tamarind.html',
                 'watermelon': '/fruit/Watermelon.html',
-                'apple': '/TREES/apple.html',
-                'flowers': '/flower/Flower.html',
-                'marigold': '/flower/Marigold.html',
+                'ximenia': '/fruit/Ximenia.html',
+                'ximenia': '/fruit/Ximenia.html',
+                'yellow passion fruit': '/fruit/Yellow Passion Fruit.html',
+                'ziziphus': '/fruit/Ziziphus.html',
+
+                // Flower
+                'Flower': '/flower/Flower.html',
+
+                'azalea': '/flower/Azalea.html',
+                'amaryllis': '/flower/Amaryllis.html',
+                'anthurium': '/flower/Anthurium.html',
+                'aster': '/flower/Aster.html',
+                'balsam': '/flower/Balsam.html',
+                'bluebell': '/flower/Bluebell.html',
+                'bougainvillea': '/flower/Bougainvillea.html',
+                'canna lily': '/flower/Canna Lily.html',
+                'carnation': '/flower/Carnation.html',
+                'chrysanthemum': '/flower/Chrysanthemum.html',
+                'daffodil': '/flower/Daffodil.html',
+                'dahlia': '/flower/Dahlia.html',
+                'daisy': '/flower/Daisy.html',
+                'erythrina': '/flower/Erythrina.html',
+                'eustoma': '/flower/Eustoma.html',
+                'evening primrose': '/flower/Evening Primrose.html',
+                'flax flower': '/flower/Flax Flower.html',
+                'forget me not': '/flower/Forget-Me-Not.html',
+                'frangipani': '/flower/Frangipani.html',
+                'gardenia': '/flower/Gardenia.html',
+                'gerbera': '/flower/Gerbera.html',
+                'gladiolus': '/flower/Gladiolus.html',
+                'hibiscus': '/flower/Hibiscus.html',
+                'hollyhock': '/flower/Hollyhock.html',
+                'hydrangea': '/flower/Hydrangea.html',
+                'indian blanket flower': '/flower/Indian Blanket Flower.html',
+                'iris': '/flower/Iris.html',
+                'ixora': '/flower/Ixora.html',
+                'jacaranda': '/flower/Jacaranda.html',
+                'jasmine': '/flower/Jasmine.html',
+                'jatropha': '/flower/Jatropha.html',
+                'kaffir lily': '/flower/Kaffir Lily.html',
+                'kalanchoe': '/flower/Kalanchoe.html',
+                'kangaroo paw': '/flower/Kangaroo Paw.html',
+                'lavender': '/flower/Lavender.html',
+                'lily': '/flower/Lily.html',
+                'lilac': '/flower/Lilac.html',
+                'lotus': '/flower/Lotus.html',
+                'magnolia': '/flower/Magnolia.html',
+                'morning glory': '/flower/Morning Glory.html',
+                'nasturtium': '/flower/Nasturtium.html',
+                'nerium': '/flower/Nerium.html',
+                'oleander': '/flower/Oleander.html',
+                'orchid': '/flower/Orchid.html',
+                'oxalis': '/flower/Oxalis.html',
+                'periwinkle': '/flower/Periwinkle.html',
+                'plumeria': '/flower/Plumeria.html',
+                'quisqualis': '/flower/Quisqualis.html',
+                'ranunculus': '/flower/Ranunculus.html',
                 'rose': '/flower/Rose.html',
-                'sunflower': '/flower/sunflower.html',
-                'fertilizer': '/Fertilizer/Fertilizer.html',
-                'market trend': 'market-trend.html',
-                'statistics': 'Statistic.html',
-                'programs': 'Programs&Schemes.html'
+                'salvia': '/flower/Salvia.html',
+                'snapdragon': '/flower/Snapdragon.html',
+                'sunflower': '/flower/Sunflower.html',
+                'tiger lily': '/flower/Tiger Lily.html',
+                'tuberose': '/flower/Tuberose.html',
+                'tulip': '/flower/Tulip.html',
+                'ursinia': '/flower/Ursinia.html',
+                'verbena': '/flower/Verbena.html',
+                'vinca': '/flower/Vinca.html',
+                'watler lily': '/flower/Water Lily.html',
+                'winter jasmine': '/flower/Winter Jasmine.html',
+                'wisteria': '/flower/Wisteria.html',
+                'xanthoceras': '/flower/Xanthoceras.html',
+                'xeranthemum': '/flower/Xeranthemum.html',
+                'yarrow': '/flower/Yarrow.html',
+                'yellow bell': '/flower/Yellow Bell.html',
+                'yellow oleander': '/flower/Yellow Oleander.html',
+                'zephyranthes': '/flower/Zephyranthes.html',
+                'zinnia': '/flower/Zinnia.html',
+            
+                // Crop
+                
+                
             };
-        
+
             // Check if the input matches any key in the searchMap
             if (searchMap[input]) {
                 window.location.href = baseUrl + searchMap[input];
@@ -199,6 +360,6 @@
                 alert(`No results found for "${input}". Please try again.`);
             }
         }
-            </script>
+    </script>
 </body>
-</html> 
+</html>

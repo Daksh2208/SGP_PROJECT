@@ -80,14 +80,14 @@ header {
     width: 100%;
     max-width: 600px;
 }
-
+/* 
 .search-dropdown {
     border: none;
     background: none;
     font-size: 16px;
     padding: 5px 10px;
     outline: none;
-}
+} */
 
 .search-input {
     border: none;
