@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Suggestion Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Suggest the Best Crop for Your Field</h1>
+        <form id="cropForm">
+            <!-- Question 1: Location/Area Type -->
+            <label for="area">What type of area is your field located in?</label>
+            <select id="area" name="area" required>
+                <option value="">Select</option>
+                <option value="Coastal">Coastal</option>
+                <option value="Plain">Plain</option>
+                <option value="Hilly">Hilly</option>
+                <option value="Arid">Arid</option>
+                <option value="Tropical">Tropical</option>
+                <option value="Temperate">Temperate</option>
+            </select>
+
+            <!-- Question 2: Soil Type -->
+            <label for="soilType">What type of soil is in your field?</label>
+            <select id="soilType" name="soilType" required>
+                <option value="">Select</option>
+                <option value="Sandy">Sandy</option>
+                <option value="Clay">Clay</option>
+                <option value="Loamy">Loamy</option>
+                <option value="Silty">Silty</option>
+                <option value="Peaty">Peaty</option>
+                <option value="Chalky">Chalky</option>
+            </select>
+
+            <!-- Question 3: Soil pH -->
+            <label for="soilPh">What is the pH level of your soil?</label>
+            <select id="soilPh" name="soilPh" required>
+                <option value="">Select</option>
+                <option value="Acidic">Acidic (below 6)</option>
+                <option value="Neutral">Neutral (6-7)</option>
+                <option value="Alkaline">Alkaline (above 7)</option>
+            </select>
+
+            <!-- Question 4: Rainfall -->
+            <label for="rainfall">How much rainfall or irrigation does your field receive?</label>
+            <select id="rainfall" name="rainfall" required>
+                <option value="">Select</option>
+                <option value="Low">Low (<500mm/year)</option>
+                <option value="Medium">Medium (500-1000mm/year)</option>
+                <option value="High">High (>1000mm/year)</option>
+            </select>
+
+            <!-- Question 5: Season -->
+            <label for="season">What season is it during the growing period?</label>
+            <select id="season" name="season" required>
+                <option value="">Select</option>
+                <option value="Winter">Winter</option>
+                <option value="Summer">Summer</option>
+                <option value="Monsoon">Monsoon</option>
+                <option value="Dry">Dry season</option>
+                <option value="Wet">Wet season</option>
+            </select>
+
+            <!-- Submit button -->
+            <button type="submit">Get Suggested Crops</button>
+        </form>
+
+        <!-- Display crop suggestions -->
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
