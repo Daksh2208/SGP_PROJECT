@@ -4,28 +4,6 @@ body {
     background-color:black;
 }
 
-/* Day/Night Mode Toggle Button */
-/* .mode-toggle {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
-
-.mode-toggle button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.mode-toggle button:hover {
-    background-color: #45a049;
-}
-} */
-
 header {
     background-color: #0cff67;
     padding: 10px 0;
