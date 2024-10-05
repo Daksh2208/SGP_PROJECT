@@ -41,34 +41,6 @@ header h1 {
     border-bottom-left-radius: 20px;
 }
 
-/* Pointer Styles */
-.pointer {
-    background-color: #f9f9f9;
-    border: 2px solid #e1e1e1;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.pointer h2 {
-    color: #333;
-    font-size: 1.8em;
-}
-
-.pointer p {
-    margin: 10px 0;
-}
-
-.pointer a {
-    color: #7f8c8d; /* Bok Choy green */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.pointer a:hover {
-    text-decoration: underline;
-}
-
 /* Section Styles */
 .section {
     margin-bottom: 40px;
@@ -83,7 +55,7 @@ header h1 {
 }
 
 .section img {
-    width: 18%;
+    width: 12%;
     height: auto;
     display: block;
     margin: 0;

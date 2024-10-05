@@ -10,7 +10,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-color: #7cfc00; /* Cluster beans green */
+    background-color: #8bc34a; /* Cluster beans green */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -47,7 +47,7 @@ header h1 {
 }
 
 .section h2 {
-    color: #7cfc00; /* Cluster beans green */
+    color: #8bc34a; /* Cluster beans green */
     font-size: 2em;
     border-bottom: 2px solid #6b8e23;
     padding-bottom: 10px;
@@ -55,7 +55,7 @@ header h1 {
 }
 
 .section img {
-    width: 20%;
+    width: 18%;
     height: auto;
     display: block;
     margin: 0;
@@ -85,7 +85,7 @@ header h1 {
 
 .section ul li strong {
     list-style: none;
-    color: #7cfc00; /* Cluster beans green */
+    color: #8bc34a; /* Cluster beans green */
 }
 
 /* Decorative Elements */
@@ -98,12 +98,12 @@ ul li strong::before {
     content: '🌱';
     list-style: none;
     margin-right: 10px;
-    color: #7cfc00; /* Cluster beans green */
+    color: #8bc34a; /* Cluster beans green */
 }
 
 h3 {
     font-size: 1.5em;
-    color: #7cfc00; /* Cluster beans green */
+    color: #8bc34a; /* Cluster beans green */
 }
 
 /* Responsive Styles */
@@ -130,7 +130,7 @@ h3 {
 
 /* Footer Styling */
 footer {
-    background-color: #7cfc00; /* Cluster beans green */
+    background-color: #8bc34a; /* Cluster beans green */
     color: #f4f4f4;
     text-align: center;
     padding: 10px 0;
