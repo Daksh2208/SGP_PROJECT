@@ -10,7 +10,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-color: #8E24AA; /* Purple */
+    background-color: #8B4513; /* Purple */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -47,7 +47,7 @@ header h1 {
 }
 
 .section h2 {
-    color: #8E24AA; /* Purple */
+    color: #8B4513; 
     font-size: 2em;
     border-bottom: 2px solid #6D1B3D; /* Darker Purple */
     padding-bottom: 10px;
@@ -85,7 +85,7 @@ header h1 {
 
 .section ul li strong {
     list-style: none;
-    color: #8E24AA; /* Purple */
+    color: #FFA500; /* Purple */
 }
 
 /* Decorative Elements */
@@ -98,12 +98,12 @@ ul li strong::before {
     content: '🍠'; /* Yam emoji */
     list-style: none;
     margin-right: 10px;
-    color: #8E24AA; /* Purple */
+    color: #FFA500; 
 }
 
 h3 {
     font-size: 1.5em;
-    color: #8E24AA; /* Purple */
+    color: #FFA500; 
 }
 
 /* Responsive Styles */
@@ -117,7 +117,7 @@ h3 {
 
 /* Footer Styles */
 footer {
-    background-color: #8E24AA; /* Purple */
+    background-color: #8B4513; 
     /* background-color: #4CAF50; Green */
     color: #f4f4f4;
     text-align: center;

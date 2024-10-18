@@ -10,7 +10,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-color: #FF5722; /* Orange */
+    background-color: #7d5a3e; 
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -35,8 +35,8 @@ header h1 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-top-right-radius: 20px; /* Curved edge on top right */
-    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -47,9 +47,9 @@ header h1 {
 }
 
 .section h2 {
-    color: #FF5722; /* Orange */
+    color: #7d5a3e; /* Orange */
     font-size: 2em;
-    border-bottom: 2px solid #E64A19; /* Darker Orange */
+    border-bottom: 2px solid #608e4a; 
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -85,7 +85,7 @@ header h1 {
 
 .section ul li strong {
     list-style: none;
-    color: #FF5722; /* Orange */
+    color: #ffb700; /* Orange */
 }
 
 /* Decorative Elements */
@@ -130,7 +130,7 @@ h3 {
 
 /* Footer Styling */
 footer {
-    background-color: #FF5722; /* Orange */
+    background-color: #7d5a3e; /* Orange */
     color: #f4f4f4;
     text-align: center;
     padding: 10px 0;
