@@ -63,7 +63,92 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
             vegetables.push('Carrots', 'Spinach', 'Kale');
             fruits.push('Blueberries', 'Raspberries', 'Cranberries');
         }
-    
+        if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Autumn') {
+            crops.push('Amaranth', 'Teff', 'Spelt');
+            vegetables.push('Parsnips', 'Kale', 'Chard');
+            fruits.push('Pine Nuts', 'Almonds', 'Pistachios');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'High' && season === 'Autumn') {
+            crops.push('Foxtail Millet', 'Finger Millet', 'Teff');
+            vegetables.push('Kale', 'Mustard Greens', 'Chard');
+            fruits.push('Quinces', 'Apples', 'Pears');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'High' && season === 'Autumn') {
+            crops.push('Barley', 'Sorghum', 'Millet');
+            vegetables.push('Pumpkins', 'Sweet Corn', 'Collard Greens');
+            fruits.push('Grapes', 'Apples', 'Peaches');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'High' && season === 'Summer') {
+            crops.push('Millet', 'Foxtail', 'Sorghum');
+            vegetables.push('Pumpkins', 'Okra', 'Corn');
+            fruits.push('Peaches', 'Plums', 'Mulberries');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'High' && season === 'Monsoon') {
+            crops.push('Rice', 'Maize', 'Finger Millet');
+            vegetables.push('Okra', 'Bitter Gourd', 'Pumpkin');
+            fruits.push('Bananas', 'Pineapples', 'Lychees');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Monsoon') {
+            crops.push('Finger Millet', 'Foxtail Millet', 'Buckwheat');
+            vegetables.push('Okra', 'Bottle Gourd', 'Green Beans');
+            fruits.push('Bananas', 'Papayas', 'Lychees');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Summer') {
+            crops.push('Quinoa', 'Amaranth', 'Oats');
+            vegetables.push('Beets', 'Eggplants', 'Zucchini');
+            fruits.push('Cherries', 'Blackberries', 'Raspberries');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
+            // Adding specific crops, vegetables, and fruits for this condition
+            crops.push('Buckwheat', 'Amaranth', 'Rye');
+            vegetables.push('Kale', 'Brussels Sprouts', 'Sweet Potatoes');
+            fruits.push('Cranberries', 'Gooseberries', 'Blackberries');
+        }
+        if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
+            crops.push('Buckwheat', 'Rye', 'Millet');
+            vegetables.push('Kale', 'Turnips', 'Collard Greens');
+            fruits.push('Cranberries', 'Gooseberries', 'Elderberries');
+        }
+        if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Summer') {
+            crops.push('Quinoa', 'Amaranth', 'Oats');
+            vegetables.push('Beets', 'Eggplants', 'Zucchini');
+            fruits.push('Cherries', 'Blackberries', 'Raspberries');}
+            if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Monsoon') {
+                console.log('Combination not possible');
+            }
+            if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Winter') {
+                // This combination does not exist in the current conditions
+                console.log('Combination not possible in Hilly areas.');
+            }
+            if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Summer') {
+                // Since this combination does not exist, nothing happens
+                // You can leave this block empty or add a message indicating the combination is not available
+                console.log('This combination is not possible for hilly areas.');
+            }
+            if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Monsoon') {
+                // This combination is not present in the original conditions
+                // So, this would not execute anything in the current structure
+                console.log('Combination not found in existing conditions');
+            }
+            if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Autumn') {
+                crops.push('Wheat', 'Barley', 'Oats');
+                vegetables.push('Carrots', 'Leeks', 'Turnips');
+                fruits.push('Pears', 'Plums', 'Grapes');
+            }
+            
+            if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Winter') {
+                console.log('Combination not possible for Clay, Alkaline, Medium Rainfall, Winter.');
+            }
+            if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Monsoon') {
+                crops.push('Millets', 'Lentils', 'Chickpeas');
+                vegetables.push('Tomatoes', 'Potatoes', 'Green Beans');
+                fruits.push('Bananas', 'Mangoes', 'Papayas');
+            }
+            if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'High' && season === 'Summer') {
+                crops.push('Soybeans', 'Corn', 'Sunflower');
+                vegetables.push('Tomatoes', 'Peppers', 'Eggplant');
+                fruits.push('Peaches', 'Apricots', 'Plums');
+            }    
         // Clay soil, different pH, rainfall, and seasons
         if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Winter') {
             crops.push('Rye', 'Triticale', 'Barley');
@@ -165,7 +250,7 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
             vegetables.push('Collard Greens', 'Swiss Chard', 'Lettuce');
             fruits.push('Strawberries', 'Blueberries', 'Raspberries');
         }
-    }
+    
     
         // Additional combinations for Hilly areas
         if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Winter') {
