@@ -14,10 +14,6 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
     let vegetables = [];
     let fruits = [];
 
-
-
-
-
     // Check for the specific case first
     if (area === 'Hilly') {
         // Sandy soil, various pH levels, rainfall, and seasons
@@ -238,14 +234,8 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
             fruits.push('Guavas', 'Limes', 'Mangos');
         }
     }
-    
-    
 
-
-
-
-
-    if (area === 'Coastal') {
+if(area === 'Coastal') {
         // Grouping possible combinations for coastal areas
         if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'High' && season === 'Winter') {
             crops.push('Coconut', 'Sugarcane', 'Pineapple');
@@ -472,15 +462,6 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
         fruits.push('Pomegranates', 'Cherries', 'Apples');
     }
 
-    
-
-
-
-
-
-
-
-
     if (area === 'Arid') {
         // Grouping possible combinations for arid areas
         if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Winter') {
@@ -576,11 +557,6 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
         vegetables.push('Bell Peppers', 'Zucchini', 'Squash');
         fruits.push('Pomegranates', 'Cherries', 'Apples');
     }
-
-    
-
-
-
 
     if (area === 'Tropical') {
         // Existing combinations
@@ -707,14 +683,6 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
             fruits.push('Pomegranates', 'Figs', 'Dates');
         }
     }
-
-    
-
-
-
-
-
-
 
     if (area === 'Temperate') {
         // Existing combinations
@@ -857,4 +825,3 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
     } else {
         resultDiv.innerHTML = `<h2>No specific crops found for your selection.</h2>`;
     }
-});
