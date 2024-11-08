@@ -15,8 +15,6 @@ body {
 }
 
 /* Header */
-
-/* Header */
 header {
     background-color: #0cff67;
     color: black;
@@ -73,9 +71,9 @@ header {
 
 .section h2 {
     font-size: 28px;
-    color: #333;
+    color: turquoise;
     margin-bottom: 15px;
-    border-bottom: 2px solid #0cff67;
+    border-bottom: 2px solid lightseagreen;
     padding-bottom: 8px;
 }
 

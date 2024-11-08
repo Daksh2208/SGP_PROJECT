@@ -910,3 +910,4 @@ if(area === 'Coastal') {
     } else {
         resultDiv.innerHTML = `<h2>No specific crops found for your selection.</h2>`;
     }
+});
