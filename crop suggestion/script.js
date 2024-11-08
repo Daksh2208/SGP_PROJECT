@@ -20,52 +20,156 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
 
     // Check for the specific case first
     if (area === 'Hilly') {
-        // Grouping possible combinations for hilly areas
-        if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'High' && season === 'Winter') {
-            crops.push('Sorghum', 'Chickpeas', 'Lentils');
-            vegetables.push('Garlic', 'Onions', 'Spinach');
-            fruits.push('Apples', 'Pears', 'Plums');
-        } else if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Spring') {
-            crops.push('Millet', 'Barley', 'Buckwheat');
-            vegetables.push('Radishes', 'Carrots', 'Peas');
-            fruits.push('Peaches', 'Nectarines', 'Kiwis');
-        } else if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Summer') {
-            crops.push('Quinoa', 'Amaranth', 'Oats');
-            vegetables.push('Beets', 'Eggplants', 'Zucchini');
-            fruits.push('Cherries', 'Blackberries', 'Raspberries');
-        } else if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Autumn') {
-            crops.push('Wheat', 'Rice', 'Canola');
-            vegetables.push('Cabbage', 'Broccoli', 'Cauliflower');
-            fruits.push('Figs', 'Persimmons', 'Grapes');
-        } else if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Winter') {
-            crops.push('Triticale', 'Rye', 'Clover');
-            vegetables.push('Turnips', 'Brussels Sprouts', 'Swiss Chard');
-            fruits.push('Blueberries', 'Cranberries', 'Gooseberries');
-        } else if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Spring') {
-            crops.push('Soybeans', 'Corn', 'Peanuts');
-            vegetables.push('Tomatoes', 'Bell Peppers', 'Cucumbers');
-            fruits.push('Watermelons', 'Cantaloupes', 'Honeydew Melons');
-        } else if (soilType === 'Loamy' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Summer') {
-            crops.push('Safflower', 'Sesame', 'Sunflower');
-            vegetables.push('Asparagus', 'Celery', 'Lettuce');
-            fruits.push('Pomegranates', 'Apricots', 'Figs');
-        } else if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
-            crops.push('Hemp', 'Flax', 'Barley');
-            vegetables.push('Artichokes', 'Pumpkins', 'Leeks');
-            fruits.push('Coconuts', 'Bananas', 'Papayas');
-        } else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Winter') {
-            crops.push('Taro', 'Cassava', 'Yam');
-            vegetables.push('Radishes', 'Green Beans', 'Sweet Potatoes');
-            fruits.push('Guavas', 'Limes', 'Mangos');
-        } else if (soilType === 'Peaty' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Spring') {
-            crops.push('Rice', 'Potatoes', 'Turnips');
-            vegetables.push('Spinach', 'Cabbage', 'Lettuce');
-            fruits.push('Plums', 'Pears', 'Strawberries');
-        } else if (soilType === 'Peaty' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Summer') {
-            crops.push('Buckwheat', 'Fava Beans', 'Chickpeas');
-            vegetables.push('Artichokes', 'Chard', 'Collard Greens');
-            fruits.push('Persimmons', 'Pomegranates', 'Raspberries');
+        // Sandy soil, various pH levels, rainfall, and seasons
+        if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Winter') {
+            crops.push('Millet', 'Quinoa', 'Amaranth');
+            vegetables.push('Beets', 'Turnips', 'Parsnips');
+            fruits.push('Cranberries', 'Lingonberries', 'Hawthorn Berries');
         }
+        if (soilType === 'Sandy' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Winter') {
+            crops.push('Barley', 'Buckwheat', 'Foxtail Millet');
+            vegetables.push('Kale', 'Leeks', 'Parsnips');
+            fruits.push('Apples', 'Blackcurrants', 'Mulberries');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Neutral' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Wheat', 'Rye', 'Triticale');
+            vegetables.push('Cabbage', 'Kale', 'Brussels Sprouts');
+            fruits.push('Apples', 'Pears', 'Plums');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Barley', 'Millet', 'Buckwheat');
+            vegetables.push('Kale', 'Turnips', 'Beets');
+            fruits.push('Apples', 'Pears', 'Plums');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Summer') {
+            crops.push('Millet', 'Barley', 'Sorghum');
+            vegetables.push('Zucchini', 'Green Beans', 'Squash');
+            fruits.push('Figs', 'Grapes', 'Melons');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Monsoon') {
+            crops.push('Maize', 'Sorghum', 'Foxtail Millet');
+            vegetables.push('Okra', 'Green Beans', 'Cucumbers');
+            fruits.push('Passionfruit', 'Lychees', 'Guavas');
+        }
+        
+        if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Autumn') {
+            crops.push('Foxtail Millet', 'Pearl Millet', 'Chickpeas');
+            vegetables.push('Garlic', 'Radishes', 'Beets');
+            fruits.push('Oranges', 'Grapes', 'Pineapples');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Neutral' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Soybeans', 'Wheat', 'Barley');
+            vegetables.push('Onions', 'Cabbage', 'Lettuce');
+            fruits.push('Grapes', 'Strawberries', 'Apples');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Acidic' && rainfall === 'High' && season === 'Spring') {
+            crops.push('Quinoa', 'Sorghum', 'Buckwheat');
+            vegetables.push('Carrots', 'Spinach', 'Kale');
+            fruits.push('Blueberries', 'Raspberries', 'Cranberries');
+        }
+    
+        // Clay soil, different pH, rainfall, and seasons
+        if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Winter') {
+            crops.push('Rye', 'Triticale', 'Barley');
+            vegetables.push('Brussels Sprouts', 'Leeks', 'Spinach');
+            fruits.push('Pears', 'Plums', 'Quince');
+        }
+        if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Summer') {
+            crops.push('Wheat', 'Rice', 'Canola');
+            vegetables.push('Broccoli', 'Cauliflower', 'Sweet Corn');
+            fruits.push('Apples', 'Cherries', 'Grapes');
+        }
+    
+        // Loamy soil, various pH levels, rainfall, and seasons
+        if (soilType === 'Loamy' && soilPh === 'Acidic' && rainfall === 'High' && season === 'Winter') {
+            crops.push('Amaranth', 'Quinoa', 'Millet');
+            vegetables.push('Beets', 'Swiss Chard', 'Turnips');
+            fruits.push('Strawberries', 'Blackberries', 'Blueberries');
+        }
+        if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Spring') {
+            crops.push('Lentils', 'Chickpeas', 'Soybeans');
+            vegetables.push('Carrots', 'Kale', 'Zucchini');
+            fruits.push('Oranges', 'Lemons', 'Pineapples');
+        }
+    
+        // Silty soil, various pH levels, rainfall, and seasons
+        if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Summer') {
+            crops.push('Corn', 'Barley', 'Millet');
+            vegetables.push('Peppers', 'Okra', 'Cucumber');
+            fruits.push('Watermelons', 'Papayas', 'Peaches');
+        }
+        if (soilType === 'Silty' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Autumn') {
+            crops.push('Rice', 'Wheat', 'Oats');
+            vegetables.push('Cabbage', 'Broccoli', 'Cauliflower');
+            fruits.push('Oranges', 'Figs', 'Nectarines');
+        }
+        if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'High' && season === 'Winter') {
+            crops.push('Taro', 'Cassava', 'Yam');
+            vegetables.push('Sweet Potatoes', 'Green Beans', 'Pumpkins');
+            fruits.push('Pineapples', 'Mangos', 'Guavas');
+        }
+    
+        // Peaty soil, various pH levels, rainfall, and seasons
+        if (soilType === 'Peaty' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Spring') {
+            crops.push('Sorghum', 'Millet', 'Barley');
+            vegetables.push('Radishes', 'Turnips', 'Spinach');
+            fruits.push('Pears', 'Strawberries', 'Gooseberries');
+        }
+        if (soilType === 'Peaty' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Autumn') {
+            crops.push('Oats', 'Buckwheat', 'Barley');
+            vegetables.push('Cabbage', 'Leeks', 'Parsnips');
+            fruits.push('Apples', 'Blueberries', 'Cranberries');
+        }
+    
+        // Various other soil, pH, rainfall, and seasonal combinations
+        if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'High' && season === 'Spring') {
+            crops.push('Corn', 'Rice', 'Peas');
+            vegetables.push('Lettuce', 'Celery', 'Onions');
+            fruits.push('Pineapples', 'Papayas', 'Passionfruit');
+        }
+        if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Wheat', 'Barley', 'Triticale');
+            vegetables.push('Turnips', 'Cabbage', 'Spinach');
+            fruits.push('Kiwis', 'Apples', 'Plums');
+        }
+        if (soilType === 'Silty' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Spring') {
+            crops.push('Millet', 'Amaranth', 'Sorghum');
+            vegetables.push('Peas', 'Asparagus', 'Lettuce');
+            fruits.push('Cherries', 'Peaches', 'Pomegranates');
+        }
+        if (soilType === 'Peaty' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Winter') {
+            crops.push('Rice', 'Buckwheat', 'Chickpeas');
+            vegetables.push('Collard Greens', 'Radishes', 'Green Beans');
+            fruits.push('Oranges', 'Cranberries', 'Grapes');
+        }
+    
+        // Expanding to different soil types, pH, and conditions
+        if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
+            crops.push('Quinoa', 'Lentils', 'Oats');
+            vegetables.push('Cauliflower', 'Brussels Sprouts', 'Kale');
+            fruits.push('Apples', 'Nectarines', 'Pears');
+        }
+        if (soilType === 'Sandy' && soilPh === 'Neutral' && rainfall === 'Medium' && season === 'Spring') {
+            crops.push('Sorghum', 'Rice', 'Barley');
+            vegetables.push('Turnips', 'Lettuce', 'Radishes');
+            fruits.push('Grapes', 'Oranges', 'Melons');
+        }
+        if (soilType === 'Loamy' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Summer') {
+            crops.push('Amaranth', 'Triticale', 'Millet');
+            vegetables.push('Beets', 'Squash', 'Spinach');
+            fruits.push('Lemons', 'Pineapples', 'Bananas');
+        }
+        if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Spring') {
+            crops.push('Corn', 'Wheat', 'Rice');
+            vegetables.push('Peppers', 'Cucumbers', 'Eggplants');
+            fruits.push('Mangos', 'Papayas', 'Oranges');
+        }
+        if (soilType === 'Peaty' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Summer') {
+            crops.push('Rice', 'Chickpeas', 'Peanuts');
+            vegetables.push('Collard Greens', 'Swiss Chard', 'Lettuce');
+            fruits.push('Strawberries', 'Blueberries', 'Raspberries');
+        }
+    }
     
         // Additional combinations for Hilly areas
         if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Winter') {
