@@ -257,7 +257,9 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
             crops.push('Wheat', 'Barley', 'Oats');
             vegetables.push('Garlic', 'Onions', 'Beets');
             fruits.push('Apples', 'Pears', 'Grapes');
-        } else if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Spring') {
+        }
+       
+         else if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Spring') {
             crops.push('Triticale', 'Sorghum', 'Soybeans');
             vegetables.push('Carrots', 'Radishes', 'Cauliflower');
             fruits.push('Cherries', 'Peaches', 'Melons');
@@ -320,9 +322,47 @@ document.getElementById('cropForm').addEventListener('submit', function(event) {
         }
     }
 
+
+
+
+
+
+
+
+
+
+
+
 if(area === 'Coastal') {
         // Grouping possible combinations for coastal areas
         if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'High' && season === 'Winter') {
+            crops.push('Coconut', 'Sugarcane', 'Pineapple');
+            vegetables.push('Seaweed', 'Cabbage', 'Cauliflower');
+            fruits.push('Mango', 'Papaya', 'Guava');
+        }
+        else if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Winter') {
+            crops.push('Coconut', 'Cashew', 'Millet');
+            vegetables.push('Cabbage', 'Spinach', 'Carrot');
+            fruits.push('Guava', 'Papaya', 'Dragon Fruit');
+        }
+        
+       else if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Coconut', 'Sugarcane', 'Pineapple');
+            vegetables.push('Seaweed', 'Cabbage', 'Cauliflower');
+            fruits.push('Mango', 'Papaya', 'Guava');
+        }
+        
+        else if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Medium' && season === 'Summer') {
+            crops.push('Coconut', 'Sugarcane', 'Millet');
+            vegetables.push('Spinach', 'Pumpkin', 'Tomato');
+            fruits.push('Banana', 'Mango', 'Papaya');
+        }
+        else if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Summer') {
+            crops.push('Cashew', 'Millet', 'Sorghum');
+            vegetables.push('Tomato', 'Eggplant', 'Okra');
+            fruits.push('Coconut', 'Banana', 'Pineapple');
+        }
+        else if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'High' && season === 'Summer') {
             crops.push('Coconut', 'Sugarcane', 'Pineapple');
             vegetables.push('Seaweed', 'Cabbage', 'Cauliflower');
             fruits.push('Mango', 'Papaya', 'Guava');
@@ -334,7 +374,85 @@ if(area === 'Coastal') {
             crops.push('Sesame', 'Millet', 'Cowpeas');
             vegetables.push('Chard', 'Spinach', 'Eggplant');
             fruits.push('Lime', 'Kiwifruit', 'Nectarines');
-        } else if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Autumn') {
+        } 
+        else if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Autumn') {
+            crops.push('Cashew', 'Millet', 'Sorghum');
+            vegetables.push('Sweet Potato', 'Okra', 'Spinach');
+            fruits.push('Banana', 'Coconut', 'Pineapple');
+        }
+        
+       else if (soilType === 'Sandy' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Monsoon') {
+            crops.push('Coconut', 'Sugarcane', 'Pineapple');
+            vegetables.push('Seaweed', 'Cabbage', 'Cauliflower');
+            fruits.push('Mango', 'Papaya', 'Guava');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'Low' && season === 'Autumn') {
+            crops.push('Rice', 'Millets', 'Barley');
+            vegetables.push('Spinach', 'Beetroot', 'Okra');
+            fruits.push('Banana', 'Pomegranate', 'Papaya');
+        }
+       else if (soilType === 'Clay' && soilPh === 'Alkaline' && rainfall === 'High' && season === 'Autumn') {
+            crops.push('Rice', 'Sugarcane', 'Coconut');
+            vegetables.push('Seaweed', 'Spinach', 'Cabbage');
+            fruits.push('Mango', 'Guava', 'Pineapple');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'High' && season === 'Autumn') {
+            crops.push('Rice', 'Tapioca', 'Coconut');
+            vegetables.push('Spinach', 'Kale', 'Brussels Sprouts');
+            fruits.push('Banana', 'Pineapple', 'Guava');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
+            crops.push('Rice', 'Cotton', 'Tobacco');
+            vegetables.push('Spinach', 'Kale', 'Brussels sprouts');
+            fruits.push('Apple', 'Pear', 'Pomegranate');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Autumn') {
+            crops.push('Rice', 'Tobacco', 'Cotton');
+            vegetables.push('Spinach', 'Tomato', 'Pumpkin');
+            fruits.push('Pineapple', 'Citrus', 'Banana');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Rice', 'Tapioca', 'Coconut');
+            vegetables.push('Spinach', 'Cabbage', 'Beans');
+            fruits.push('Pineapple', 'Guava', 'Banana');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Summer') {
+            crops.push('Rice', 'Groundnut', 'Taro');
+            vegetables.push('Spinach', 'Okra', 'Tomato');
+            fruits.push('Banana', 'Pineapple', 'Papaya');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Monsoon') {
+            crops.push('Rice', 'Taro', 'Sugarcane');
+            vegetables.push('Spinach', 'Tomato', 'Okra');
+            fruits.push('Mango', 'Banana', 'Papaya');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'Medium' && season === 'Monsoon') {
+            crops.push('Rice', 'Taro', 'Sugarcane');
+            vegetables.push('Spinach', 'Brinjal', 'Tomato');
+            fruits.push('Banana', 'Mango', 'Pineapple');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Rice', 'Barley', 'Wheat');
+            vegetables.push('Spinach', 'Lettuce', 'Carrot');
+            fruits.push('Apple', 'Orange', 'Lemon');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Winter') {
+            crops.push('Rice', 'Sugarcane', 'Taro');
+            vegetables.push('Spinach', 'Cabbage', 'Lettuce');
+            fruits.push('Coconut', 'Banana', 'Guava');
+        }
+       else if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Summer') {
+            crops.push('Rice', 'Sugarcane', 'Coconut');
+            vegetables.push('Tomato', 'Cabbage', 'Spinach');
+            fruits.push('Mango', 'Pineapple', 'Banana');
+        }
+        else if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Monsoon') {
+            crops.push('Rice', 'Coconut', 'Sugarcane');
+            vegetables.push('Seaweed', 'Spinach', 'Okra');
+            fruits.push('Mango', 'Banana', 'Pineapple');
+        }
+        
+        else if (soilType === 'Clay' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Autumn') {
             crops.push('Rice', 'Barley', 'Wheat');
             vegetables.push('Kale', 'Broccoli', 'Radishes');
             fruits.push('Figs', 'Dates', 'Mulberries');
@@ -342,7 +460,9 @@ if(area === 'Coastal') {
             crops.push('Pulses', 'Chickpeas', 'Lentils');
             vegetables.push('Beets', 'Turnips', 'Onions');
             fruits.push('Blackberries', 'Raspberries', 'Plums');
-        } else if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Spring') {
+        } 
+        
+        else if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Spring') {
             crops.push('Cotton', 'Sorghum', 'Peanuts');
             vegetables.push('Carrots', 'Beans', 'Cucumbers');
             fruits.push('Watermelon', 'Honeydew', 'Strawberries');
@@ -350,7 +470,54 @@ if(area === 'Coastal') {
             crops.push('Soybeans', 'Sunflower', 'Triticale');
             vegetables.push('Bell Peppers', 'Pumpkins', 'Squash');
             fruits.push('Pomegranates', 'Apricots', 'Cherries');
-        } else if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
+        } 
+        else if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Monsoon') {
+            crops.push('Rice', 'Coconut', 'Sugarcane');
+            vegetables.push('Seaweed', 'Spinach', 'Cabbage');
+            fruits.push('Mango', 'Papaya', 'Banana');
+        }
+        else if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Winter') {
+            crops.push('Rice', 'Sugarcane', 'Coconut');
+            vegetables.push('Spinach', 'Cauliflower', 'Tomato');
+            fruits.push('Mango', 'Papaya', 'Pineapple');
+        }
+        else if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Summer') {
+            crops.push('Rice', 'Sugarcane', 'Coconut');
+            vegetables.push('Tomato', 'Cabbage', 'Spinach');
+            fruits.push('Mango', 'Banana', 'Pineapple');
+        }
+        else if (soilType === 'Loamy' && soilPh === 'Medium' && rainfall === 'High' && season === 'Summer') {
+            crops.push('Rice', 'Sugarcane', 'Coconut');
+            vegetables.push('Tomato', 'Cucumber', 'Chili');
+            fruits.push('Mango', 'Papaya', 'Banana');
+        }
+       else if (soilType === 'Loamy' && soilPh === 'Medium' && rainfall === 'High' && season === 'Winter') {
+            crops.push('Rice', 'Wheat', 'Barley');
+            vegetables.push('Spinach', 'Cabbage', 'Cauliflower');
+            fruits.push('Mango', 'Guava', 'Banana');
+        }
+        else if (soilType === 'Loamy' && soilPh === 'Medium' && rainfall === 'High' && season === 'Monsoon') {
+            crops.push('Rice', 'Sugarcane', 'Tobacco');
+            vegetables.push('Tomato', 'Okra', 'Eggplant');
+            fruits.push('Banana', 'Coconut', 'Papaya');
+        }
+        else if (soilType === 'Loamy' && soilPh === 'Medium' && rainfall === 'Low' && season === 'Monsoon') {
+            crops.push('Rice', 'Tapioca', 'Groundnut');
+            vegetables.push('Spinach', 'Brinjal', 'Lady Finger');
+            fruits.push('Banana', 'Coconut', 'Papaya');
+        }
+        else if (soilType === 'Loamy' && soilPh === 'Medium' && rainfall === 'Low' && season === 'Winter') {
+            crops.push('Rice', 'Wheat', 'Barley');
+            vegetables.push('Cabbage', 'Spinach', 'Carrot');
+            fruits.push('Apple', 'Pomegranate', 'Lemon');
+        }
+       else if (soilType === 'Loamy' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Summer') {
+            crops.push('Rice', 'Sugarcane', 'Cotton');
+            vegetables.push('Tomato', 'Lettuce', 'Chili');
+            fruits.push('Mango', 'Banana', 'Papaya');
+        }
+        
+        else if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
             crops.push('Flax', 'Oats', 'Triticale');
             vegetables.push('Radishes', 'Kohlrabi', 'Swiss Chard');
             fruits.push('Coconuts', 'Lemons', 'Persimmons');
@@ -358,7 +525,34 @@ if(area === 'Coastal') {
             crops.push('Corn', 'Rye', 'Barley');
             vegetables.push('Spinach', 'Lettuce', 'Garlic');
             fruits.push('Apples', 'Figs', 'Peaches');
-        } else if (soilType === 'Peaty' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Spring') {
+        } 
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Summer') {
+            crops.push('Rice', 'Sugarcane', 'Taro');
+            vegetables.push('Spinach', 'Okra', 'Tomato');
+            fruits.push('Banana', 'Pineapple', 'Coconut');
+        }        
+       else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Winter') {
+            crops.push('Rice', 'Barley', 'Wheat');
+            vegetables.push('Spinach', 'Cabbage', 'Carrot');
+            fruits.push('Apple', 'Pomegranate', 'Olives');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Monsoon') {
+            crops.push('Rice', 'Tamarind', 'Cashew');
+            vegetables.push('Spinach', 'Okra', 'Tomato');
+            fruits.push('Coconut', 'Banana', 'Jackfruit');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Monsoon') {
+            crops.push('Rice', 'Taro', 'Coconut');
+            vegetables.push('Spinach', 'Okra', 'Chili');
+            fruits.push('Banana', 'Mango', 'Papaya');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Summer') {
+            crops.push('Rice', 'Coconut', 'Taro');
+            vegetables.push('Spinach', 'Cucumber', 'Tomato');
+            fruits.push('Banana', 'Pineapple', 'Papaya');
+        }
+        
+        else if (soilType === 'Peaty' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Spring') {
             crops.push('Potatoes', 'Taro', 'Yams');
             vegetables.push('Artichokes', 'Radishes', 'Onions');
             fruits.push('Guavas', 'Mangos', 'Strawberries');
@@ -465,7 +659,59 @@ if(area === 'Coastal') {
             crops.push('Barley', 'Sorghum', 'Corn');
             vegetables.push('Eggplant', 'Zucchini', 'Carrots');
             fruits.push('Pomegranates', 'Cherries', 'Cantaloupe');
-        } else if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
+        } 
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'High' && season === 'Summer') {
+            crops.push('Rice', 'Maize', 'Wheat');
+            vegetables.push('Tomato', 'Cucumber', 'Spinach');
+            fruits.push('Mango', 'Banana', 'Papaya');
+        }
+       else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Summer') {
+            crops.push('Wheat', 'Barley', 'Sunflower');
+            vegetables.push('Tomato', 'Cucumber', 'Spinach');
+            fruits.push('Apple', 'Pomegranate', 'Grapes');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Winter') {
+            crops.push('Wheat', 'Barley', 'Mustard');
+            vegetables.push('Carrot', 'Spinach', 'Lettuce');
+            fruits.push('Apple', 'Pomegranate', 'Plum');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Monsoon') {
+            crops.push('Rice', 'Wheat', 'Barley');
+            vegetables.push('Spinach', 'Lettuce', 'Cabbage');
+            fruits.push('Banana', 'Pineapple', 'Mango');
+        }
+       else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Low' && season === 'Autumn') {
+            crops.push('Wheat', 'Barley', 'Oats');
+            vegetables.push('Spinach', 'Lettuce', 'Cabbage');
+            fruits.push('Apple', 'Pear', 'Pomegranate');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Medium' && season === 'Autumn') {
+            crops.push('Wheat', 'Barley', 'Oats');
+            vegetables.push('Spinach', 'Lettuce', 'Carrot');
+            fruits.push('Apple', 'Pomegranate', 'Pear');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Neutral' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Wheat', 'Barley', 'Oats');
+            vegetables.push('Cabbage', 'Spinach', 'Carrot');
+            fruits.push('Apple', 'Pomegranate', 'Pear');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Winter') {
+            crops.push('Rice', 'Wheat', 'Barley');
+            vegetables.push('Carrot', 'Lettuce', 'Spinach');
+            fruits.push('Apple', 'Pear', 'Plum');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Summer') {
+            crops.push('Rice', 'Wheat', 'Maize');
+            vegetables.push('Tomato', 'Cucumber', 'Spinach');
+            fruits.push('Banana', 'Orange', 'Pineapple');
+        }
+        else if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'Medium' && season === 'Monsoon') {
+            crops.push('Rice', 'Wheat', 'Barley');
+            vegetables.push('Spinach', 'Tomato', 'Peas');
+            fruits.push('Guava', 'Pineapple', 'Papaya');
+        }
+        
+        else if (soilType === 'Silty' && soilPh === 'Acidic' && rainfall === 'Low' && season === 'Autumn') {
             crops.push('Flax', 'Rye', 'Quinoa');
             vegetables.push('Lettuce', 'Radishes', 'Beets');
             fruits.push('Guavas', 'Figs', 'Plums');
@@ -642,6 +888,17 @@ if(area === 'Coastal') {
         vegetables.push('Bell Peppers', 'Zucchini', 'Squash');
         fruits.push('Pomegranates', 'Cherries', 'Apples');
     }
+
+
+
+
+
+
+
+
+
+
+
 
     if (area === 'Tropical') {
         // Existing combinations
