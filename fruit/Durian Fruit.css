@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🟡'; /* Yellow circle emoji as a durian theme marker */
+    content: '🍍'; 
     list-style: none;
     margin-right: 10px;
     color: #9cbd1f; /* Adjusted color for durian theme */

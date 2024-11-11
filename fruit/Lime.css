@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🍋'; /* Lemon emoji for visual consistency */
+    content: '🍋‍🟩'; /* Lemon emoji for visual consistency */
     list-style: none;
     margin-right: 10px;
     color: #9ccc1b; /* Lime green color */

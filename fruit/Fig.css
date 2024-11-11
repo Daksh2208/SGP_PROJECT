@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🍇'; /* Fig emoji */
+    content: '🌰'; /* Fig emoji */
     list-style: none;
     margin-right: 10px;
     color: #6c2f3f; /* Adjusted color for fig theme */

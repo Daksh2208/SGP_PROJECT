@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🍈'; /* Guava emoji */
+    content: '🍐'; /* Guava emoji */
     list-style: none;
     margin-right: 10px;
     color: #4caf50; /* Guava-themed green */

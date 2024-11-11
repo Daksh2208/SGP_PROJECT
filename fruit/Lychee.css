@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🍍'; /* Lychee emoji */
+    content: '🍚'; /* Lychee emoji */
     list-style: none;
     margin-right: 10px;
     color: #e74c3c; /* Adjusted color for lychee theme */

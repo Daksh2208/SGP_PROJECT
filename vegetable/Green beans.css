@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🌱'; /* Bean icon */
+    content: '🫛'; /* Bean icon */
     list-style: none;
     margin-right: 10px;
     color: #4CAF50; /* Green */

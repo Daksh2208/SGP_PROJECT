@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🌿'; /* Ginger icon */
+    content: '🫚'; /* Ginger icon */
     list-style: none;
     margin-right: 10px;
     color: #D2691E; /* Chocolate */

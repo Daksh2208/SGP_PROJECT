@@ -85,7 +85,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🫐';
+    content: '🍈';
     margin-right: 10px;
     color: #F5B46A; /* Cantaloupe Orange */
 }

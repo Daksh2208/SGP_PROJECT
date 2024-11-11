@@ -29,7 +29,7 @@ header h1 {
 
 /* Container Styles */
 .container {
-    width: 90%;
+    width: 97%;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
@@ -55,7 +55,7 @@ header h1 {
 }
 
 .section img {
-    width: 12%;
+    width: 10%;
     height: auto;
     display: block;
     margin: 0;

@@ -10,15 +10,12 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    background-color: #4a90e2; /* Primary color */
+    background-color: #e1ad01; /* Adjusted color for Yellow Passion Fruit theme */
     color: white;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-top-right-radius: 20px; /* Curved edge on top right */
-    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
 }
 
 header h1 {
@@ -35,10 +32,7 @@ header h1 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-top-right-radius: 20px; /* Curved edge on top right */
-    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
 }
 
 /* Section Styles */
@@ -47,15 +41,15 @@ header h1 {
 }
 
 .section h2 {
-    color: #003f6c; /* Dark blue for headers */
+    color: #e1ad01; /* Adjusted color for Yellow Passion Fruit theme */
     font-size: 2em;
-    border-bottom: 2px solid #4a90e2; /* Primary color for the border */
+    border-bottom: 2px solid #e1ad01;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 .section img {
-    width: 14%;
+    width: 15%;
     height: auto;
     display: block;
     margin: 0;
@@ -67,43 +61,37 @@ header h1 {
 
 .section p, .section ul {
     list-style: none;
-    overflow: hidden; /* Clearfix for floated images */
+    overflow: hidden;
 }
 
 /* List Styles */
 .section ul {
-    list-style-type: disc;
-    list-style: none;
     margin-left: 20px;
 }
 
 .section ul li {
-    list-style: none;
     margin-bottom: 10px;
     color: black;
 }
 
 .section ul li strong {
-    list-style: none;
-    color: #003f6c; /* Dark blue for list items */
+    color: #e1ad01; /* Adjusted color for Yellow Passion Fruit theme */
 }
 
 /* Decorative Elements */
 ul {
-    list-style: none;
     padding: 0;
 }
 
 ul li strong::before {
-    content: '🫐';
-    list-style: none;
+    content: '🍃'; /* Yellow Passion Fruit-themed emoji */
     margin-right: 10px;
-    color: #4a90e2; /* Primary color for icons */
+    color: #e1ad01; /* Adjusted color for Yellow Passion Fruit theme */
 }
 
 h3 {
     font-size: 1.5em;
-    color: #003f6c; /* Dark blue for sub-headers */
+    color: #e1ad01; /* Adjusted color for Yellow Passion Fruit theme */
 }
 
 /* Responsive Styles */
@@ -130,13 +118,13 @@ h3 {
 
 /* Footer styling */
 footer {
-    background-color: #4a90e2; /* Primary color */
+    background-color: #e1ad01; 
     color: #ecf0f1;
     text-align: center;
     padding: 10px 0;
     width: 100%;
     position: relative;
-    bottom: 0; /* Ensures footer stays at the bottom */
+    bottom: 0;
 }
 
 footer p {

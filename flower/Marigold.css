@@ -26,9 +26,8 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    width: 100%; /* Set the width to the device width */
-    border-top-right-radius: 20px; /* Curved edge on top right */
-    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px; 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -42,8 +41,8 @@ header h1 {
 main {
     flex: 1; /* Makes the main section grow and take available space */
     margin: 20px auto;
-    width: 100%; /* Set the width to the device width */
     padding: 0 20px;
+    width:auto;
     border-top-right-radius: 20px; /* Curved edge on top right */
     border-bottom-right-radius: 20px; /* Curved edge on bottom right */
     border-top-left-radius: 20px;
@@ -57,7 +56,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    width: 100%; /* Set the width to the device width */
 }
 
 h2 {
@@ -85,6 +83,12 @@ li {
     line-height: 1.5;
 }
 
+ul li strong::before {
+    content: '🌼';
+    list-style: none;
+    margin-right: 10px;
+    color: orange;
+}
 /* Footer styling */
 footer {
     background-color: orange;
@@ -101,9 +105,3 @@ footer p {
     font-size: 0.9em;
 }
 
-ul li strong::before {
-    content: '🌼';
-    list-style: none;
-    margin-right: 10px;
-    color: orange;
-}

@@ -95,7 +95,7 @@ ul {
 }
 
 ul li strong::before {
-    content: '🍇'; /* Gooseberry emoji */
+    content: '🫒'; /* Gooseberry emoji */
     list-style: none;
     margin-right: 10px;
     color: #6a994e; /* Adjusted color for gooseberry theme */

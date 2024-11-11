@@ -26,7 +26,6 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    width: 100%; /* Set the width to the device width */
     border-top-right-radius: 20px; /* Curved edge on top right */
     border-bottom-right-radius: 20px; /* Curved edge on bottom right */
     border-top-left-radius: 20px;
@@ -42,8 +41,12 @@ header h1 {
 main {
     flex: 1; /* Makes the main section grow and take available space */
     margin: 20px auto;
-    width: 100%; /* Set the width to the device width */
     padding: 0 20px;
+    width:auto;
+    border-top-right-radius: 20px; /* Curved edge on top right */
+    border-bottom-right-radius: 20px; /* Curved edge on bottom right */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 /* Section styling */
