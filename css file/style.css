@@ -58,14 +58,6 @@ header {
     width: 100%;
     max-width: 600px;
 }
-/* 
-.search-dropdown {
-    border: none;
-    background: none;
-    font-size: 16px;
-    padding: 5px 10px;
-    outline: none;
-} */
 
 .search-input {
     border: none;
@@ -109,9 +101,76 @@ header {
     display: block;
 }
 
+
 .menu-bar a:hover {
     background-color: #5b5a57;
     border-radius: 5px;
+}
+
+
+.menu-bar ul li {
+    margin: 0 10px;
+}
+
+.menu-bar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #555;
+}
+
+/* Mobile Menu Styling */
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (min-width: 100px) and (max-width: 1024px) { 
+
+    .bar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .searchbar-container {
+        margin: 10px 0;
+        width: 100%; /* Take full width on smaller screens */
+        display: flex;
+        justify-content: center; /* Center the search bar */
+    }
+
+    .searchbar {
+        max-width: 100%; /* Make search bar full-width on smaller screens */
+        width: 90%;
+    }
+
+
+    .menu-bar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .menu-bar ul li {
+        margin: 0;
+        border-bottom: 1px solid #555;
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu-bar ul.active {
+        display: flex;
+    }
 }
 
 .arg img {
@@ -189,7 +248,7 @@ header {
 .Technology-link,
 .vegetables,
 .trees,.flower {
-    width: 12%;
+    width:fit-content;
     margin-left: 10px;
     font-style: italic;
     border-radius: 5px;
