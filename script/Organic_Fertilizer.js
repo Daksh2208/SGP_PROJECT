@@ -5,7 +5,7 @@ const organicFertilizers = [
     "Feather Meal", "Fish Emulsion", "Fish Hydrolysate", "Fish Meal", "Goat Manure", "Green Manure",
     "Green Sand", "Horse Manure", "Humic Acid", "Kelp Meal", "Leaf Mould", "Liquid Seaweed",
     "Molasses", "Mulch", "Mushroom Compost", "Mustard Cake", "Mycorrhizal Fungi", "Neem Cake",
-    "Organic Tea Fertilizer", "Oyster shell Meal", "Peat Moss", "Poultry Pelets", "Rabbit Manure",
+    "Organic Tea", "Oyster shell Meal", "Peat Moss", "Poultry Pelets", "Rabbit Manure",
     "Rhizobium Inoculants", "Rice Husk Ash", "Rock Phosphate", "Seaweed Extract", "Sheep Manure",
     "Shrimp Meal", "Silage", "Soybean Meal", "Trichoderma", "Vermicompost", "Vinegar solution",
     "Wood Ash", "Worm Castings", "Yarrow Compost"
